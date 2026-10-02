@@ -1,0 +1,996 @@
+[
+  {
+    "Contract Address": "eip155:43114:0x019556f144355441c553478bfbd5c0dc01c92cad",
+    "Public Name Tag": "WAVAX/aFENIX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/FENIX (Symbol: WAVAX/aFENIX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x04df1f8cd725a3dcb56c47ce5e5cb6b0e0413b30",
+    "Public Name Tag": "USDt/innovate-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TetherToken/innovation coin  (Symbol: USDt/innovate) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x0638a2422f02803dbcecc35171fcb37b16f609f4",
+    "Public Name Tag": "CS/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's ChayapholSmile/Wrapped AVAX (Symbol: CS/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x08c6c6eab9e11b66789aed63dfc4230b64a9e710",
+    "Public Name Tag": "AAVE.e/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Aave Token/Wrapped AVAX (Symbol: AAVE.e/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x0a039940362d28a48c9802bdb803ddbb33646638",
+    "Public Name Tag": "SR/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's SR/Wrapped AVAX (Symbol: SR/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x0a8ea0811477d462888d2505cc275f8509a7cb36",
+    "Public Name Tag": "MOD/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TYLERMODOBAMAINU/Wrapped AVAX (Symbol: MOD/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x0ba96f2f9e56bbb75e5bb0bd951b07adea3d2072",
+    "Public Name Tag": "WAVAX/USDC-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/USD Coin (Symbol: WAVAX/USDC) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x0bfa28a67e591607800f8daa4a49151ffac8c145",
+    "Public Name Tag": "GJY/SNOW-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's G Jelly/Avalanche Snow (Symbol: GJY/SNOW) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x0c42e741dd850bb9d5a1ede5efe2869d89603159",
+    "Public Name Tag": "XDai/USDt-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's XDai/TetherToken (Symbol: XDai/USDt) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x0ce37db103eb3d6e4290a0cbb14a5f18f3f05e8d",
+    "Public Name Tag": "USDt/USDC.e-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TetherToken/USD Coin (Symbol: USDt/USDC.e) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x0dacff84b28c7871bed11f654125594c34b6b40f",
+    "Public Name Tag": "COQ/SkiBonk+-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's COQINU/t.me/SkiBonk (Symbol: COQ/SkiBonk+) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x110e68959f40802d6fc017094d91ee6ca18a43f8",
+    "Public Name Tag": "CS/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's ChayapholSmile/Wrapped AVAX (Symbol: CS/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x116e394d813ff5b4dbebbc904136f161ce0506e5",
+    "Public Name Tag": "sigma/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's sigma/Wrapped AVAX (Symbol: sigma/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x119178ed33e7d462ef2d4a787dc8d801e0397150",
+    "Public Name Tag": "CNR/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Canary/Wrapped AVAX (Symbol: CNR/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x126088a196b85f428127d7ced5d901212ddc6b96",
+    "Public Name Tag": "GENI/USDC-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Genius/USD Coin (Symbol: GENI/USDC) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x1358abc5332f72c9702e1f4af5e801497934fd66",
+    "Public Name Tag": "BXN/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Blackfort/Wrapped AVAX (Symbol: BXN/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x14200e0892ce1929346f5c5d07820f69a1774d3b",
+    "Public Name Tag": "WETH.e/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped Ether/Wrapped AVAX (Symbol: WETH.e/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x16157810b35a782a7cb4f05b1e1103b04765b645",
+    "Public Name Tag": "mpepe/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's mpepe/Wrapped AVAX (Symbol: mpepe/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x18aef861f39203d14ae2d1488f8ee88dfc243b8a",
+    "Public Name Tag": "WAVAX/SPELL-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/Spell Token (Symbol: WAVAX/SPELL) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x1aa6d1fe96ad77a92edc4b78645eb244a0f9d5b2",
+    "Public Name Tag": "JOE/WAVAX-0.05% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's JoeToken/Wrapped AVAX (Symbol: JOE/WAVAX) pool, with 0.05% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x1b7b84d83ccbb222a27fef302be4aa04b67f7d8b",
+    "Public Name Tag": "WAVAX/BLASTRR-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/Blastrr Basic Income (Symbol: WAVAX/BLASTRR) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x1c3a7b9fae913d3405ebd3a6bfa43efb874a74b4",
+    "Public Name Tag": "sAVAX/PNT-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Staked AVAX/Ponos ant (Symbol: sAVAX/PNT) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x1c484179c3c3d58a09f572a3d8a5cb5b9f239a21",
+    "Public Name Tag": "innovate/Pioneer-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's innovation coin /PioneerToken (Symbol: innovate/Pioneer) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x1dc5d7a936601a117a467256c801a69485b34f01",
+    "Public Name Tag": "NUSHITS/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's NUSHITS/Wrapped AVAX (Symbol: NUSHITS/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x1e39821d8427f23eca323b745f0c9560a03f377d",
+    "Public Name Tag": "UFCPLSR/PLSR-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's UFC Pulsar/Pulsar (Symbol: UFCPLSR/PLSR) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x1f2caf343e88bb91eb8c03fe1e721fb4504fcd4d",
+    "Public Name Tag": "BEER/USDC-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Beer Coin/USD Coin (Symbol: BEER/USDC) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x238d33e80490e1725bc0451194a1e176735b5927",
+    "Public Name Tag": "OpenGPT/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's OpenGPT/Wrapped AVAX (Symbol: OpenGPT/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x2499829c244593a6d47efafbd9dbbb2afda9914b",
+    "Public Name Tag": "USDC/BILJET-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's USD Coin/BILJET (Symbol: USDC/BILJET) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x27084accff5487ae37eb59ab92cfc4b7ca4defd6",
+    "Public Name Tag": "ODDZ/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's OddzToken/Wrapped AVAX (Symbol: ODDZ/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x2a8fee2d21c5285b1f085d132abc7e16732b5ba6",
+    "Public Name Tag": "USDC/PXRA-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's USD Coin/PXRA (Symbol: USDC/PXRA) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x2db44948dfad77f007e88525d957f8821b288ef5",
+    "Public Name Tag": "WBTC.e/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped BTC/Wrapped AVAX (Symbol: WBTC.e/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x33d7b0ad0158d34dbdbba5f95dd4942b74a5a303",
+    "Public Name Tag": "NEI2/USDt-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's NEIRO2/TetherToken (Symbol: NEI2/USDt) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x357818207ee2dc00506a59fcc9ccb65042a8cece",
+    "Public Name Tag": "URANUS/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Uranus/Wrapped AVAX (Symbol: URANUS/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x35950f78e0bde105542bdf914c2eb9b924bec45d",
+    "Public Name Tag": "WBTC.e/USDC-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped BTC/USD Coin (Symbol: WBTC.e/USDC) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x37b9291608d648a23cf4c88668437fbb8a3df004",
+    "Public Name Tag": "BTBS/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's BTBSaga/Wrapped AVAX (Symbol: BTBS/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x3822dc7167d8e0516fc206d834b93a0526ad3e25",
+    "Public Name Tag": "MILK2/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's MilkyWay Token by SpaceSwap v2/Wrapped AVAX (Symbol: MILK2/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x3a22cbd9734ad030e0520991341416b6b79fba4a",
+    "Public Name Tag": "WAVAX/ERGC-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/EnergyCoin (Symbol: WAVAX/ERGC) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x3b48f9fd35ef0746a1390c4df73cab8d71133f2c",
+    "Public Name Tag": "USDt/Sifu-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TetherToken/Sifu Vision (Symbol: USDt/Sifu) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x3b972cb2d0705ac6093d7b9054423c1cd4387f15",
+    "Public Name Tag": "ROCO/USDT.e-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's ROCO/Tether USD (Symbol: ROCO/USDT.e) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x41fcee3103664b53ab80606198adfd873a8660c9",
+    "Public Name Tag": "LINK.e/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Chainlink Token/Wrapped AVAX (Symbol: LINK.e/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x4303b6382234458b9e6a5ac4a1bbd60118bc508b",
+    "Public Name Tag": "KULA/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Kula/Wrapped AVAX (Symbol: KULA/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x4894a60ed0806c861aa94bcb1c84700165f3ca73",
+    "Public Name Tag": "aAvaUSDC/USDC-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Aave Avalanche USDC/USD Coin (Symbol: aAvaUSDC/USDC) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x48c99d1544cd27a9c2c2a9e00542c0f102501a95",
+    "Public Name Tag": "CS/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's ChayapholSmile/Wrapped AVAX (Symbol: CS/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x48dd6143eebd7abb8acacc540fd23aa7e3d6cd39",
+    "Public Name Tag": "AVAX/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Avalanche/Wrapped AVAX (Symbol: AVAX/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x4a27d053c8036f51189c17273bce2e1c1cf68221",
+    "Public Name Tag": "DZHV/WETH.e-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's DizzyHavoc/Wrapped Ether (Symbol: DZHV/WETH.e) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x4a5c0e100f830a1f6b76a42e6bb4be2a7fe0d61b",
+    "Public Name Tag": "WAVAX/USDC-0.05% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/USD Coin (Symbol: WAVAX/USDC) pool, with 0.05% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x4c8fd022d9e35c3e4d6d24823596dbb06e65ecb3",
+    "Public Name Tag": "WETH.e/LUNA-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped Ether/LUNA (Symbol: WETH.e/LUNA) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x4cbf2461dc9984f932713b4b96d4cb8da36d1480",
+    "Public Name Tag": "WAVAX/DAI.e-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/Dai Stablecoin (Symbol: WAVAX/DAI.e) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x4ceb815fb0ec53539b562fda5e9cd46a7d0bab61",
+    "Public Name Tag": "GENI/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Genius/Wrapped AVAX (Symbol: GENI/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x4e075ed83fe091da151f0f40a2036bc7ecbf3b83",
+    "Public Name Tag": "H A G D/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's He agreed/Wrapped AVAX (Symbol: H A G D/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x5028f03fd5e2dc1e136099472d22329f61abafdc",
+    "Public Name Tag": "AUSD/USDC-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's AUSD/USD Coin (Symbol: AUSD/USDC) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x50a7855e6263e7d7a8c0b372cabfa45ca4fdf239",
+    "Public Name Tag": "USDC/BXT-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's USD Coin/ElBitterXToken (Symbol: USDC/BXT) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x511524e0cf3218f083b59bfd12b4e7494f277d9f",
+    "Public Name Tag": "LOST/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's LostToken/Wrapped AVAX (Symbol: LOST/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x5197a86790340c5c8f5ec7f0bed26215c5455854",
+    "Public Name Tag": "AVAX 💎/AVAXS.99-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Avalanche 💎 /Avalanche Silver  (Symbol: AVAX 💎/AVAXS.99) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x538f209ad9c2f48d4ff082d4cf7f6a60a176a68d",
+    "Public Name Tag": "WAVAX/WMATIC-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/Wrapped Matic (Symbol: WAVAX/WMATIC) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x572dbcb00bbf48b6a2d39d1ca210299a669766f4",
+    "Public Name Tag": "QI/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's BENQI/Wrapped AVAX (Symbol: QI/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x58e0e426b8ab3a2d7ad2ad9d833306700c57b2d4",
+    "Public Name Tag": "ADP/WAVAX-0.05% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's AeroDollarsProtocol/Wrapped AVAX (Symbol: ADP/WAVAX) pool, with 0.05% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x5da8f9fa824f22732f850107bcc8fccaa7590021",
+    "Public Name Tag": "SUSHI/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's SushiToken/Wrapped AVAX (Symbol: SUSHI/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x5face58d5e55b4a3d8bf67241aa1641d8356d99f",
+    "Public Name Tag": "WAVAX/Pioneer-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/PioneerToken (Symbol: WAVAX/Pioneer) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x5fcb551d8c1267182748ccbf24cc966cc64a34a9",
+    "Public Name Tag": "WETH/WAVAX-0.05% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped Ether/Wrapped AVAX (Symbol: WETH/WAVAX) pool, with 0.05% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x6285578dfb629ab4416ff13ee8d47b9dea448ead",
+    "Public Name Tag": "DZHV/BINGO-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's DizzyHavoc/Bingo (Symbol: DZHV/BINGO) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x629fb27e1631cf3ec86caf0d74f96f0e4854c746",
+    "Public Name Tag": "QI/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's BENQI/Wrapped AVAX (Symbol: QI/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x670a76b2692c568ee472857a656a227a782676dd",
+    "Public Name Tag": "ROCO/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's ROCO/Wrapped AVAX (Symbol: ROCO/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x676af26fd801a50e2d1be8a597dab112d0efdd38",
+    "Public Name Tag": "LUNA/SOL-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's LUNA/Wrapped SOL (Symbol: LUNA/SOL) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x67ff2381bdb184e27871368db2fc347be8c70f2e",
+    "Public Name Tag": "WBTC/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped BTC/Wrapped AVAX (Symbol: WBTC/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x6a069a8cab98803e6785453041e0ceba57e0138c",
+    "Public Name Tag": "USDC.e/USDC-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's USD Coin/USD Coin (Symbol: USDC.e/USDC) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x6d45c3b9339670ad35488fdc4722bf317603add7",
+    "Public Name Tag": "USDt/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TetherToken/Wrapped AVAX (Symbol: USDt/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x6d8874e20603d5d34a3257cc9a6cc79a712d5a39",
+    "Public Name Tag": "USDt/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TetherToken/Wrapped AVAX (Symbol: USDt/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x71396918f11201d55cb23cd3a84a22900087abe6",
+    "Public Name Tag": "AUSD/USDC-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's AUSD/USD Coin (Symbol: AUSD/USDC) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x7434d02933bf3943bde4a7208c00ef7239dfa936",
+    "Public Name Tag": "MONEY/USDT.e-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Moremoney USD/Tether USD (Symbol: MONEY/USDT.e) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x74add13fb6a8df2b96b9f00ef6da5a09432351da",
+    "Public Name Tag": "AMX/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Amanix/Wrapped AVAX (Symbol: AMX/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x74f794b83553435329f56f3add75da1a0ddd1677",
+    "Public Name Tag": "ROCO/USDC-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's ROCO/USD Coin (Symbol: ROCO/USDC) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x74fb484b398add9cddc0a7bcb9948f56210d7d3f",
+    "Public Name Tag": "NSFW/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Pleasure Coin/Wrapped AVAX (Symbol: NSFW/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x75d1fd674400d88c48c7f2f05c303c6568edf69d",
+    "Public Name Tag": "BTC.b/WBTC.e-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Bitcoin/Wrapped BTC (Symbol: BTC.b/WBTC.e) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x760f31e5a04152a423bd145d72170ca6ebc74c2f",
+    "Public Name Tag": "UVT/USDC-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's UltravioletaToken/USD Coin (Symbol: UVT/USDC) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x795ae4c586a746c2c229d708436eac19037f44d2",
+    "Public Name Tag": "XAUt0/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's XAUt0/Wrapped AVAX (Symbol: XAUt0/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x7a468d2a79e619d9645b195b532aab2d012cafc3",
+    "Public Name Tag": "UFCPLSR/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's UFC Pulsar/Wrapped AVAX (Symbol: UFCPLSR/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x7d2fddd2c33e07581482c3056272aa2862d03500",
+    "Public Name Tag": "SUSHI.e/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's SushiToken/Wrapped AVAX (Symbol: SUSHI.e/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x80b57c6b6e63cc9ebd5fa5dcd0a811d3e38faf15",
+    "Public Name Tag": "WAVAX/TLOS-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/TLOS (Symbol: WAVAX/TLOS) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x815482b1a596603fa036f4372e6ce3e25b380d17",
+    "Public Name Tag": "ROCO/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's ROCO/Wrapped AVAX (Symbol: ROCO/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x822d7107bd3b1b2f25aa7046be13830ff98b1635",
+    "Public Name Tag": "PNIC/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Phoenic Token/Wrapped AVAX (Symbol: PNIC/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x85d71803cbba118f2108b1dece37515934d8ca35",
+    "Public Name Tag": "USDt/Mess10-0.05% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TetherToken/MEMESS10 (Symbol: USDt/Mess10) pool, with 0.05% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x872ae790f4f1561358e2dca3604c50c8687ed0e9",
+    "Public Name Tag": "AVAX 💎/SNOW-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Avalanche 💎 /Avalanche Snow (Symbol: AVAX 💎/SNOW) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x88853bc4fb8cb1efb21fdee695873120bece8bc7",
+    "Public Name Tag": "USDC.e/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's USD Coin/Wrapped AVAX (Symbol: USDC.e/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x8889d050bfcb104edc9a73629f5cab1d2d1bb06c",
+    "Public Name Tag": "^3EG/USDC-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's 3 Exponential Growth/USD Coin (Symbol: ^3EG/USDC) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x8a43554da0c3a2d6c2005c88c2097a24a4366773",
+    "Public Name Tag": "WAVAX/USDT.e-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/Tether USD (Symbol: WAVAX/USDT.e) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x8c29a143d26b053d777338670d2dbd865c3f75a9",
+    "Public Name Tag": "USDt/USDC-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TetherToken/USD Coin (Symbol: USDt/USDC) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x8eaf84001447da898054d06edf6e4ebc010f33a1",
+    "Public Name Tag": "WAVAX/USDC-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/USD Coin (Symbol: WAVAX/USDC) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x96d559018029487b2b9382f7e2396ba3e71f6386",
+    "Public Name Tag": "wMEMO/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped MEMO/Wrapped AVAX (Symbol: wMEMO/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x9792832644692dae408be999c5a728ad095723cc",
+    "Public Name Tag": "BXN/USDC-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Blackfort/USD Coin (Symbol: BXN/USDC) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x996d64eca0b55a310952cf04f316889bb87437f3",
+    "Public Name Tag": "CDT/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's CheckDot/Wrapped AVAX (Symbol: CDT/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x99b9e788c6b26e362ebe974391024c9c6a0c473e",
+    "Public Name Tag": "LUNA/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's LUNA/Wrapped AVAX (Symbol: LUNA/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x9a8e99c90b76af83ba61decc9d2e47276f0833f0",
+    "Public Name Tag": "WAVAX/UST-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/UST (Symbol: WAVAX/UST) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x9befc51f2ac9d611f6f61ecac3e9b009baba5f19",
+    "Public Name Tag": "USDt/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TetherToken/Wrapped AVAX (Symbol: USDt/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x9c74d0d482c93bc3ccd799609f2d5b0cfc5267a3",
+    "Public Name Tag": "univax/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's univax/Wrapped AVAX (Symbol: univax/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0x9f5908534b1eab25307659f9577f3c5bbf704cd6",
+    "Public Name Tag": "SUI/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Sui/Wrapped AVAX (Symbol: SUI/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xa798fe265ea44bd9e4d636e080aacc1bb7818a20",
+    "Public Name Tag": "ADBYTES/USDt-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's ADBYTES/TetherToken (Symbol: ADBYTES/USDt) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xa8c958955829c66e168f77f51f1e3fde01d7bc34",
+    "Public Name Tag": "USDt/UST-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TetherToken/UST (Symbol: USDt/UST) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xab20361e3c0ddbd113d0108ec64de92afc107ec6",
+    "Public Name Tag": "WBTC/WBTC.e-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped BTC/Wrapped BTC (Symbol: WBTC/WBTC.e) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xaede617e9e962a7f77cc850085f27a9ed3da4d8e",
+    "Public Name Tag": "LAMBO/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's LAMBO/Wrapped AVAX (Symbol: LAMBO/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xaff1263278ed888ae5cfb1ce9ced39eaf8258e50",
+    "Public Name Tag": "AUSD/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's AUSD/Wrapped AVAX (Symbol: AUSD/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xb039dbe02651eeaa7f3450fe5962c885a069b6c3",
+    "Public Name Tag": "PNT/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Ponos ant/Wrapped AVAX (Symbol: PNT/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xb0a491327c86dabaade41e61044c7ad5a4f1a511",
+    "Public Name Tag": "JOE/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's JoeToken/Wrapped AVAX (Symbol: JOE/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xb92b4336330531c5129420474c8738214bf33cc1",
+    "Public Name Tag": "CNR/WAVAX-0.05% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Canary/Wrapped AVAX (Symbol: CNR/WAVAX) pool, with 0.05% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xba4371923e4c8dca20bcc4b4a0058d754bf6d0c2",
+    "Public Name Tag": "Nova/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's nova/Wrapped AVAX (Symbol: Nova/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xbea3b04d2a5f830ba3e52a4886c58ce4de2ae4eb",
+    "Public Name Tag": "WETH.e/WAVAX-0.05% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped Ether/Wrapped AVAX (Symbol: WETH.e/WAVAX) pool, with 0.05% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xbf30b874d89198160e24df3e7d814d683ca89b9b",
+    "Public Name Tag": "ROCO/WAVAX-0.05% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's ROCO/Wrapped AVAX (Symbol: ROCO/WAVAX) pool, with 0.05% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xc0b6dc34777d66ae1537455abf65760a1dbd0f87",
+    "Public Name Tag": "USDC/USDC-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's USD Coin/USD Coin (Symbol: USDC/USDC) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xc4a3575cfbceb713c52b89e9d9a369f33dd96a69",
+    "Public Name Tag": "BUSD/USDC-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's BUSD Token/USD Coin (Symbol: BUSD/USDC) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xc96f42ce7e70141bdc555cebdadf88c746dcc36c",
+    "Public Name Tag": "innovate/USDT.e-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's innovation coin /Tether USD (Symbol: innovate/USDT.e) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xc99e00ec0382f82d9d8cf1ad958ac5f349de5b26",
+    "Public Name Tag": "PNT/USDt-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Ponos ant/TetherToken (Symbol: PNT/USDt) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xcb3b487190b0a4e6ec71439846f2efdda98aa644",
+    "Public Name Tag": "WAVAX/Mess10-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/MEMESS10 (Symbol: WAVAX/Mess10) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xcd21c58ffbc60ca09110df010a3c6f835dc82c07",
+    "Public Name Tag": "innovate/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's innovation coin /Wrapped AVAX (Symbol: innovate/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xcf551b1ea3eb2ee0140bba3b863543cb3660a57c",
+    "Public Name Tag": "USDt/Mess10-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TetherToken/MEMESS10 (Symbol: USDt/Mess10) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xcf9ca5d61602a200557d22d194c1a7adf43f510f",
+    "Public Name Tag": "USDC/aXEN-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's USD Coin/XEN Crypto (Symbol: USDC/aXEN) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xd02a83ec0f5375b2f263ae751d19c38ded1771a9",
+    "Public Name Tag": "UFCPLSR/PLSR-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's UFC Pulsar/Pulsar (Symbol: UFCPLSR/PLSR) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xd04073f32ae027fc3f87ff39795536c0f2340edd",
+    "Public Name Tag": "WAVAX/WFTM-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/Wrapped Fantom (Symbol: WAVAX/WFTM) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xd1c9c53aa8b2392032454e6cf78ee55deff6dab7",
+    "Public Name Tag": "USDC/WMATIC-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's USD Coin/Wrapped Matic (Symbol: USDC/WMATIC) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xd36e6ab80e1b9a5b306c3a982211d7456a29051f",
+    "Public Name Tag": "LAMA/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's LAMA/Wrapped AVAX (Symbol: LAMA/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xd85f305a5cac398fd3f04f0000f14c23cf614e5a",
+    "Public Name Tag": "ARX/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's ArbitraX /Wrapped AVAX (Symbol: ARX/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xd937a05df90918f584a17a168026cc06f9cb099d",
+    "Public Name Tag": "WAVAX/USDC-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/USD Coin (Symbol: WAVAX/USDC) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xda4b820efb9140c570758d7900f823f12e10c365",
+    "Public Name Tag": "innovate/Pioneer-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's innovation coin /PioneerToken (Symbol: innovate/Pioneer) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xdeeb651bcab60e7a95201cbe8e3bf1d91d061fac",
+    "Public Name Tag": "WAVAX/Illuminati-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/Illuminati (Symbol: WAVAX/Illuminati) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xe147f382b3651c4abd21ff9f5c11952e51750dab",
+    "Public Name Tag": "SUSHI.e/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's SushiToken/Wrapped AVAX (Symbol: SUSHI.e/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xe1552fcc5584096fa90b312b7df963b570d8ce84",
+    "Public Name Tag": "USDt/USDT.e-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TetherToken/Tether USD (Symbol: USDt/USDT.e) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xe395adceb33e21141b60017c7537a9947eb18674",
+    "Public Name Tag": "WETH.e/USDt-0.05% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped Ether/TetherToken (Symbol: WETH.e/USDt) pool, with 0.05% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xe5972a50b339c55b9d247ab0ead1f76ab6d2cc28",
+    "Public Name Tag": "CHEEZ/WETH.e-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's CheeseToken/Wrapped Ether (Symbol: CHEEZ/WETH.e) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xe730a5ad8992ef2225fdb4d8e860b982a0c0e29a",
+    "Public Name Tag": "xJOE/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's JoeBar/Wrapped AVAX (Symbol: xJOE/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xe8164b71feaf0dc58774a71a53d19e312a3ff9b6",
+    "Public Name Tag": "UNI.e/USDC-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Uniswap/USD Coin (Symbol: UNI.e/USDC) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xe8be729699fd697af95aed669462a416b2232a89",
+    "Public Name Tag": "USDt/BTCBR-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TetherToken/BitcoinBR (Symbol: USDt/BTCBR) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xea0ac4d387c62b3aebf589a35c3c43f17b3f8b0e",
+    "Public Name Tag": "BOBC/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's bobcoin/Wrapped AVAX (Symbol: BOBC/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xedf6f45654bfd22bddcc76d2a38428b7c1bfc2db",
+    "Public Name Tag": "IXVI/USDC-0.05% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's IXVI/USD Coin (Symbol: IXVI/USDC) pool, with 0.05% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xee043c0c29dd3d0ab9a2718cdd1badcba15c1cd9",
+    "Public Name Tag": "USDC_T/USD_T2-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's USDC_TEST/USD_test2 (Symbol: USDC_T/USD_T2) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xf040940ab3d9e6dc22d68d843db06020c8cb2e94",
+    "Public Name Tag": "MOD/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's TYLERMODOBAMAINU/Wrapped AVAX (Symbol: MOD/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xf07e665b90299a121440a1125766de515d635c84",
+    "Public Name Tag": "WAVAX/UNI-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/Uniswap (Symbol: WAVAX/UNI) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xf34d5862934bf788db7cc26ee33d213026ca013d",
+    "Public Name Tag": "BTC.b/WAVAX-0.3% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Bitcoin/Wrapped AVAX (Symbol: BTC.b/WAVAX) pool, with 0.3% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xf50e74169df01297c54903367e069582b247a35a",
+    "Public Name Tag": "BOBC/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's bobcoin/Wrapped AVAX (Symbol: BOBC/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xf5cda98813e45a7889b568cfcb713fb20b612df6",
+    "Public Name Tag": "G-ETTO_V9/WAVAX-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Garetto_V9/Wrapped AVAX (Symbol: G-ETTO_V9/WAVAX) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xf63a9fdd899267d5d2c8f576e7266f4745e55202",
+    "Public Name Tag": "WAVAX/aXEN-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/XEN Crypto (Symbol: WAVAX/aXEN) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xf8ec7271d9765641b81e31679d38d830146724ac",
+    "Public Name Tag": "tst/WAVAX-0.01% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's test/Wrapped AVAX (Symbol: tst/WAVAX) pool, with 0.01% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xfc1f125c0a9105f829e43ab1d2d427bf6818192d",
+    "Public Name Tag": "WETH.e/DAI.e-1% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped Ether/Dai Stablecoin (Symbol: WETH.e/DAI.e) pool, with 1% fee tier, on Avalanche C network"
+  },
+  {
+    "Contract Address": "eip155:43114:0xfdb3bbc34e1a5c2c02ae9e28525a7be6b82327af",
+    "Public Name Tag": "WAVAX/Mess10-0.05% Pool",
+    "Project Name": "Sushi v3",
+    "UI/Website Link": "https://www.sushi.com/",
+    "Public Note": "Sushi v3's Wrapped AVAX/MEMESS10 (Symbol: WAVAX/Mess10) pool, with 0.05% fee tier, on Avalanche C network"
+  }
+]

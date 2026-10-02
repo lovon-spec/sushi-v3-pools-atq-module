@@ -6,7 +6,9 @@ TypeScript module that retrieves Sushi v3 pool metadata from The Graph and retur
 
 This repository is a derivative of [kaiblade/sushi-v3-pools-atq-module](https://github.com/kaiblade/sushi-v3-pools-atq-module), based on upstream commit [`3d8f86cf786c68d3e6417a9ae5b707c605310a06`](https://github.com/kaiblade/sushi-v3-pools-atq-module/tree/3d8f86cf786c68d3e6417a9ae5b707c605310a06). The original author metadata is preserved in `package.json`.
 
-The derivative adds a 30-second request deadline covering transport and JSON consumption, defensive pagination checks, sanitized errors, nonempty API-key validation, and canonical The Graph gateway URLs using an Authorization Bearer header with redirects rejected. The `atq-types` dependency range follows the recommended caret spelling while the locked dependency version remains unchanged. Configured deployment IDs and tag construction are unchanged from the upstream source.
+The derivative adds bounded, credential-safe requests and pagination. It reads source metadata once, then requests all pool pages at that block hash and checks the deployment, hash, block number and indexing-error flag on every page. Historical snapshot unavailability causes an error rather than a silent fallback to moving source data. A terminal first page now needs two requests: the metadata preflight and the pool query.
+
+Cursor variables use the String scalar for the configured Sushi entity IDs. Tags remain dynamically constructed from source metadata. Empty or HTML/Markdown-formatted token metadata is excluded because it cannot produce valid plain-text tags; malformed metadata or noninteger fees cause a safe error. The public name budget includes the actual formatted fee suffix. The current 142-pool Avalanche regression fixture preserves the existing output exactly. Other configured chains are not claimed to have been live-validated by this revision.
 
 ## Build and interface
 
@@ -15,15 +17,16 @@ Use Node.js and Yarn Classic with the committed dependency lock:
 ```sh
 yarn install --frozen-lockfile --ignore-scripts
 yarn build
+yarn test
 ```
 
 The compiler produces `dist/main.mjs`. Its exported async function accepts a chain ID string and a The Graph API key string and returns `Promise<ContractTag[]>`. Supply the key at runtime; do not commit it to this repository. The supported chain IDs and deployment URLs are defined in `src/main.mts`.
 
-The inherited package test command references an upstream test entry point that is not included in this source-only publication. It is not the separate offline validation suite used to review this derivative.
-
 ## Validation scope
 
-The reviewed source compiles with TypeScript 5.4.2 and passed 24 offline tests of the compiled module with mocked network transport. The checked Avalanche dataset contained 142 pools, and every generated output matched the baseline. A separately executed exact canonical API request succeeded, and replaying its response through the compiled module produced the same outputs. This is not a claim that the complete module was run with a real API key or that every configured chain was live-tested.
+The committed offline test suite builds the actual module, substitutes network transport with controlled responses, and checks the 142-pool fixture plus pagination, strict request construction, invalid metadata, snapshot inconsistencies, error atomicity, deadlines and credential redaction. Tests use synthetic keys and make no live API calls. Run `yarn test` after installing the locked dependencies. The test runner uses Node's ESM loader and test runner; Node 20.11 or newer is recommended.
+
+The fixture records Avalanche data observed on 2 October 2026. A separate independent review reconstructed the same 142 outputs from factory events and token metadata. These observations do not establish current source availability, overlap, or completeness after that snapshot. The revised snapshot-bound query must be validated separately before any claim of live end-to-end operation.
 
 Publication does not constitute registry acceptance or a guarantee of future source data, naming, overlap, or policy compliance.
 

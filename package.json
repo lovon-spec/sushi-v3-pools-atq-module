@@ -1,18 +1,18 @@
 {
   "name": "sushi-v3-pools-atq-module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "main.mjs",
   "type": "module",
   "author": "kaiblade <kaibladenet@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "test": "node dist/tests/unittest.mjs"
+    "test": "yarn build && node --loader ./tests/mock-fetch-loader.mjs --test --test-concurrency=1 ./tests/run-tests.mjs"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
-    "@types/node-fetch": "^2.6.11",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "graphql": "16.11.0"
   },
   "dependencies": {
     "atq-types": "^1.1.5",

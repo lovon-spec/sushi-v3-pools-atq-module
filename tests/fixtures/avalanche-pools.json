@@ -1,0 +1,1990 @@
+[
+  {
+    "id": "0x019556f144355441c553478bfbd5c0dc01c92cad",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xc3e8abfa04b0ec442c2a4d65699a40f7fced8055",
+      "name": "FENIX",
+      "symbol": "aFENIX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x04df1f8cd725a3dcb56c47ce5e5cb6b0e0413b30",
+    "token0": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "token1": {
+      "id": "0xa752b27a0007d754f74035abf46ad39bdf066fa8",
+      "name": "innovation coin ",
+      "symbol": "innovate"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x0638a2422f02803dbcecc35171fcb37b16f609f4",
+    "token0": {
+      "id": "0x486a4c61c705ac1c34939064471b73bd33c9d80d",
+      "name": "ChayapholSmile",
+      "symbol": "CS"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x08c6c6eab9e11b66789aed63dfc4230b64a9e710",
+    "token0": {
+      "id": "0x63a72806098bd3d9520cc43356dd78afe5d386d9",
+      "name": "Aave Token",
+      "symbol": "AAVE.e"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x0a039940362d28a48c9802bdb803ddbb33646638",
+    "token0": {
+      "id": "0x7a4486d49f3c224ecf664fd403394f0dd924cf43",
+      "name": "SR",
+      "symbol": "SR"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x0a8ea0811477d462888d2505cc275f8509a7cb36",
+    "token0": {
+      "id": "0x78af99e93d42d5bdd428eae005378780d58ed84f",
+      "name": "TYLERMODOBAMAINU",
+      "symbol": "MOD"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x0ba96f2f9e56bbb75e5bb0bd951b07adea3d2072",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x0bfa28a67e591607800f8daa4a49151ffac8c145",
+    "token0": {
+      "id": "0x2fc3554d089ef04ecedb784d5de31f3d98fff5ee",
+      "name": "G Jelly",
+      "symbol": "GJY"
+    },
+    "token1": {
+      "id": "0x890dae343cfdd36c3b3e6aa1a38d36280e1bb71d",
+      "name": "Avalanche Snow",
+      "symbol": "SNOW"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x0c42e741dd850bb9d5a1ede5efe2869d89603159",
+    "token0": {
+      "id": "0x1a9920a4b4d1b1cbf7950435883992e3d0d9bb1a",
+      "name": "XDai",
+      "symbol": "XDai"
+    },
+    "token1": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x0ce37db103eb3d6e4290a0cbb14a5f18f3f05e8d",
+    "token0": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "token1": {
+      "id": "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
+      "name": "USD Coin",
+      "symbol": "USDC.e"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x0dacff84b28c7871bed11f654125594c34b6b40f",
+    "token0": {
+      "id": "0x420fca0121dc28039145009570975747295f2329",
+      "name": "COQINU",
+      "symbol": "COQ"
+    },
+    "token1": {
+      "id": "0x446c74e55e015065fd2b41057d1589ad1447f1b5",
+      "name": "t.me/SkiBonk",
+      "symbol": "SkiBonk+"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x110e68959f40802d6fc017094d91ee6ca18a43f8",
+    "token0": {
+      "id": "0x486a4c61c705ac1c34939064471b73bd33c9d80d",
+      "name": "ChayapholSmile",
+      "symbol": "CS"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x116e394d813ff5b4dbebbc904136f161ce0506e5",
+    "token0": {
+      "id": "0x266e71415d6269da1f2ffb8dbee6154b67963d3e",
+      "name": "sigma",
+      "symbol": "sigma"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x119178ed33e7d462ef2d4a787dc8d801e0397150",
+    "token0": {
+      "id": "0x8d88e48465f30acfb8dac0b3e35c9d6d7d36abaf",
+      "name": "Canary",
+      "symbol": "CNR"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x126088a196b85f428127d7ced5d901212ddc6b96",
+    "token0": {
+      "id": "0x444444444444c1a66f394025ac839a535246fcc8",
+      "name": "Genius",
+      "symbol": "GENI"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x1358abc5332f72c9702e1f4af5e801497934fd66",
+    "token0": {
+      "id": "0x5bc5664ebafec11351570ab7627bdd1daa76ad47",
+      "name": "Blackfort",
+      "symbol": "BXN"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x14200e0892ce1929346f5c5d07820f69a1774d3b",
+    "token0": {
+      "id": "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab",
+      "name": "Wrapped Ether",
+      "symbol": "WETH.e"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x16157810b35a782a7cb4f05b1e1103b04765b645",
+    "token0": {
+      "id": "0x0d7cede319b88674cda681c54da6dd66d0101cb6",
+      "name": "mpepe",
+      "symbol": "mpepe"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x18aef861f39203d14ae2d1488f8ee88dfc243b8a",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xce1bffbd5374dac86a2893119683f4911a2f7814",
+      "name": "Spell Token",
+      "symbol": "SPELL"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x1aa6d1fe96ad77a92edc4b78645eb244a0f9d5b2",
+    "token0": {
+      "id": "0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd",
+      "name": "JoeToken",
+      "symbol": "JOE"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "500"
+  },
+  {
+    "id": "0x1b7b84d83ccbb222a27fef302be4aa04b67f7d8b",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xf400b5b2b3ad1e5ad17147f15f79a7fbfc326faf",
+      "name": "Blastrr Basic Income",
+      "symbol": "BLASTRR"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x1c3a7b9fae913d3405ebd3a6bfa43efb874a74b4",
+    "token0": {
+      "id": "0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be",
+      "name": "Staked AVAX",
+      "symbol": "sAVAX"
+    },
+    "token1": {
+      "id": "0x7d87aa556c2d0b94cefb3b122e627c08ff78d10d",
+      "name": "Ponos ant",
+      "symbol": "PNT"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x1c484179c3c3d58a09f572a3d8a5cb5b9f239a21",
+    "token0": {
+      "id": "0xa752b27a0007d754f74035abf46ad39bdf066fa8",
+      "name": "innovation coin ",
+      "symbol": "innovate"
+    },
+    "token1": {
+      "id": "0xbdef4444668ba0011e8b45f54b4bca4e7b786792",
+      "name": "PioneerToken",
+      "symbol": "Pioneer"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x1dc5d7a936601a117a467256c801a69485b34f01",
+    "token0": {
+      "id": "0x80b4ebfb0bbff93e769c8f66c17767d59eb456e8",
+      "name": "NUSHITS",
+      "symbol": "NUSHITS"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x1e39821d8427f23eca323b745f0c9560a03f377d",
+    "token0": {
+      "id": "0x7a6bf020161deab23913ccfa5be43ad37aeb6ca8",
+      "name": "UFC Pulsar",
+      "symbol": "UFCPLSR"
+    },
+    "token1": {
+      "id": "0x7a842193d291840fc38b45f991c5b8cc908f8a7c",
+      "name": "Pulsar",
+      "symbol": "PLSR"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x1f2caf343e88bb91eb8c03fe1e721fb4504fcd4d",
+    "token0": {
+      "id": "0x9eee9f73bf50bac0f6e40ee8d859a0752dc58100",
+      "name": "Beer Coin",
+      "symbol": "BEER"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x238d33e80490e1725bc0451194a1e176735b5927",
+    "token0": {
+      "id": "0x748ad503a0b1f034fbd3ab9e4ea6d5b5aded5ea8",
+      "name": "OpenGPT",
+      "symbol": "OpenGPT"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x2499829c244593a6d47efafbd9dbbb2afda9914b",
+    "token0": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "token1": {
+      "id": "0xe6e322d7f17eecc9c258bae1c208b025660d4546",
+      "name": "BILJET",
+      "symbol": "BILJET"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x27084accff5487ae37eb59ab92cfc4b7ca4defd6",
+    "token0": {
+      "id": "0xb0a6e056b587d0a85640b39b1cb44086f7a26a1e",
+      "name": "OddzToken",
+      "symbol": "ODDZ"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x2a8fee2d21c5285b1f085d132abc7e16732b5ba6",
+    "token0": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "token1": {
+      "id": "0xd23218eafcdb77f08cbb5aaad3da6ad80f3509a9",
+      "name": "PXRA",
+      "symbol": "PXRA"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x2db44948dfad77f007e88525d957f8821b288ef5",
+    "token0": {
+      "id": "0x50b7545627a5162f82a992c33b87adc75187b218",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC.e"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x33d7b0ad0158d34dbdbba5f95dd4942b74a5a303",
+    "token0": {
+      "id": "0x8833a222d3a1535c1013fcc5f47e28c3ea6b0f74",
+      "name": "NEIRO2",
+      "symbol": "NEI2"
+    },
+    "token1": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x357818207ee2dc00506a59fcc9ccb65042a8cece",
+    "token0": {
+      "id": "0x50a7146faea35834cf28e3cd2051b78d30cc546d",
+      "name": "Uranus",
+      "symbol": "URANUS"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x35950f78e0bde105542bdf914c2eb9b924bec45d",
+    "token0": {
+      "id": "0x50b7545627a5162f82a992c33b87adc75187b218",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC.e"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x37b9291608d648a23cf4c88668437fbb8a3df004",
+    "token0": {
+      "id": "0x311ec870e3d7172896ca9f18145bafc8902c9f3b",
+      "name": "BTBSaga",
+      "symbol": "BTBS"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x3822dc7167d8e0516fc206d834b93a0526ad3e25",
+    "token0": {
+      "id": "0x721c299e6bf7d6a430d9bea3364ea197314bce09",
+      "name": "MilkyWay Token by SpaceSwap v2",
+      "symbol": "MILK2"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x3a22cbd9734ad030e0520991341416b6b79fba4a",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xdc353b94284e7d3aeab2588cea3082b9b87c184b",
+      "name": "EnergyCoin",
+      "symbol": "ERGC"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x3b48f9fd35ef0746a1390c4df73cab8d71133f2c",
+    "token0": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "token1": {
+      "id": "0xb168085d608d7ba4931a503d3424bc44ddb6b30d",
+      "name": "Sifu Vision",
+      "symbol": "Sifu"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x3b972cb2d0705ac6093d7b9054423c1cd4387f15",
+    "token0": {
+      "id": "0xb2a85c5ecea99187a977ac34303b80acbddfa208",
+      "name": "ROCO",
+      "symbol": "ROCO"
+    },
+    "token1": {
+      "id": "0xc7198437980c041c805a1edcba50c1ce5db95118",
+      "name": "Tether USD",
+      "symbol": "USDT.e"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x41fcee3103664b53ab80606198adfd873a8660c9",
+    "token0": {
+      "id": "0x5947bb275c521040051d82396192181b413227a3",
+      "name": "Chainlink Token",
+      "symbol": "LINK.e"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x4303b6382234458b9e6a5ac4a1bbd60118bc508b",
+    "token0": {
+      "id": "0x99f2bdf00acd067c65a79a0b6a3914c555196ea4",
+      "name": "Kula",
+      "symbol": "KULA"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x4894a60ed0806c861aa94bcb1c84700165f3ca73",
+    "token0": {
+      "id": "0x625e7708f30ca75bfd92586e17077590c60eb4cd",
+      "name": "Aave Avalanche USDC",
+      "symbol": "aAvaUSDC"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x48c99d1544cd27a9c2c2a9e00542c0f102501a95",
+    "token0": {
+      "id": "0x66f422dfe289905d10fa6cd7344f059adaff4c88",
+      "name": "ChayapholSmile",
+      "symbol": "CS"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x48dd6143eebd7abb8acacc540fd23aa7e3d6cd39",
+    "token0": {
+      "id": "0x3f9f650f2f47437a127791aa79c81741f06b6719",
+      "name": "Avalanche",
+      "symbol": "AVAX"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x4a27d053c8036f51189c17273bce2e1c1cf68221",
+    "token0": {
+      "id": "0x3419875b4d3bca7f3fdda2db7a476a79fd31b4fe",
+      "name": "DizzyHavoc",
+      "symbol": "DZHV"
+    },
+    "token1": {
+      "id": "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab",
+      "name": "Wrapped Ether",
+      "symbol": "WETH.e"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x4a5c0e100f830a1f6b76a42e6bb4be2a7fe0d61b",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "500"
+  },
+  {
+    "id": "0x4c8fd022d9e35c3e4d6d24823596dbb06e65ecb3",
+    "token0": {
+      "id": "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab",
+      "name": "Wrapped Ether",
+      "symbol": "WETH.e"
+    },
+    "token1": {
+      "id": "0x70928e5b188def72817b7775f0bf6325968e563b",
+      "name": "LUNA",
+      "symbol": "LUNA"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x4cbf2461dc9984f932713b4b96d4cb8da36d1480",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xd586e7f844cea2f87f50152665bcbc2c279d8d70",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI.e"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x4ceb815fb0ec53539b562fda5e9cd46a7d0bab61",
+    "token0": {
+      "id": "0x444444444444c1a66f394025ac839a535246fcc8",
+      "name": "Genius",
+      "symbol": "GENI"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x4e075ed83fe091da151f0f40a2036bc7ecbf3b83",
+    "token0": {
+      "id": "0xab93e5459e43b11ddade0859523f0c2179d0791c",
+      "name": "He agreed",
+      "symbol": "H A G D"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x5028f03fd5e2dc1e136099472d22329f61abafdc",
+    "token0": {
+      "id": "0x00000000efe302beaa2b3e6e1b18d08d69a9012a",
+      "name": "AUSD",
+      "symbol": "AUSD"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x50a7855e6263e7d7a8c0b372cabfa45ca4fdf239",
+    "token0": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "token1": {
+      "id": "0xc8c06a58e4ad7c01b9bb5af6c76a7a1cfebd0319",
+      "name": "ElBitterXToken",
+      "symbol": "BXT"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x511524e0cf3218f083b59bfd12b4e7494f277d9f",
+    "token0": {
+      "id": "0x449674b82f05d498e126dd6615a1057a9c088f2c",
+      "name": "LostToken",
+      "symbol": "LOST"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x5197a86790340c5c8f5ec7f0bed26215c5455854",
+    "token0": {
+      "id": "0x0a2fc7e7a383168055e8b616c9f340783e8dca65",
+      "name": "Avalanche \ud83d\udc8e ",
+      "symbol": "AVAX \ud83d\udc8e"
+    },
+    "token1": {
+      "id": "0x1e00c09204a39409d1ed112f4e2ee545699fa0b1",
+      "name": "Avalanche Silver ",
+      "symbol": "AVAXS.99"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x538f209ad9c2f48d4ff082d4cf7f6a60a176a68d",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xf2f13f0b7008ab2fa4a2418f4ccc3684e49d20eb",
+      "name": "Wrapped Matic",
+      "symbol": "WMATIC"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x572dbcb00bbf48b6a2d39d1ca210299a669766f4",
+    "token0": {
+      "id": "0x8729438eb15e2c8b576fcc6aecda6a148776c0f5",
+      "name": "BENQI",
+      "symbol": "QI"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x58e0e426b8ab3a2d7ad2ad9d833306700c57b2d4",
+    "token0": {
+      "id": "0x68b849779787459df5835c4a9e491ab62b15459c",
+      "name": "AeroDollarsProtocol",
+      "symbol": "ADP"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "500"
+  },
+  {
+    "id": "0x5da8f9fa824f22732f850107bcc8fccaa7590021",
+    "token0": {
+      "id": "0x39cf1bd5f15fb22ec3d9ff86b0727afc203427cc",
+      "name": "SushiToken",
+      "symbol": "SUSHI"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x5face58d5e55b4a3d8bf67241aa1641d8356d99f",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xbdef4444668ba0011e8b45f54b4bca4e7b786792",
+      "name": "PioneerToken",
+      "symbol": "Pioneer"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x5fcb551d8c1267182748ccbf24cc966cc64a34a9",
+    "token0": {
+      "id": "0x8b82a291f83ca07af22120aba21632088fc92931",
+      "name": "Wrapped Ether",
+      "symbol": "WETH"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "500"
+  },
+  {
+    "id": "0x6285578dfb629ab4416ff13ee8d47b9dea448ead",
+    "token0": {
+      "id": "0x3419875b4d3bca7f3fdda2db7a476a79fd31b4fe",
+      "name": "DizzyHavoc",
+      "symbol": "DZHV"
+    },
+    "token1": {
+      "id": "0xb262a485d98d8e19175818d47453e7812ca255a8",
+      "name": "Bingo",
+      "symbol": "BINGO"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x629fb27e1631cf3ec86caf0d74f96f0e4854c746",
+    "token0": {
+      "id": "0x8729438eb15e2c8b576fcc6aecda6a148776c0f5",
+      "name": "BENQI",
+      "symbol": "QI"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x670a76b2692c568ee472857a656a227a782676dd",
+    "token0": {
+      "id": "0xb2a85c5ecea99187a977ac34303b80acbddfa208",
+      "name": "ROCO",
+      "symbol": "ROCO"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x676af26fd801a50e2d1be8a597dab112d0efdd38",
+    "token0": {
+      "id": "0x70928e5b188def72817b7775f0bf6325968e563b",
+      "name": "LUNA",
+      "symbol": "LUNA"
+    },
+    "token1": {
+      "id": "0xfe6b19286885a4f7f55adad09c3cd1f906d2478f",
+      "name": "Wrapped SOL",
+      "symbol": "SOL"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x67ff2381bdb184e27871368db2fc347be8c70f2e",
+    "token0": {
+      "id": "0x0555e30da8f98308edb960aa94c0db47230d2b9c",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x6a069a8cab98803e6785453041e0ceba57e0138c",
+    "token0": {
+      "id": "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
+      "name": "USD Coin",
+      "symbol": "USDC.e"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x6d45c3b9339670ad35488fdc4722bf317603add7",
+    "token0": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x6d8874e20603d5d34a3257cc9a6cc79a712d5a39",
+    "token0": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x71396918f11201d55cb23cd3a84a22900087abe6",
+    "token0": {
+      "id": "0x00000000efe302beaa2b3e6e1b18d08d69a9012a",
+      "name": "AUSD",
+      "symbol": "AUSD"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x7434d02933bf3943bde4a7208c00ef7239dfa936",
+    "token0": {
+      "id": "0x0f577433bf59560ef2a79c124e9ff99fca258948",
+      "name": "Moremoney USD",
+      "symbol": "MONEY"
+    },
+    "token1": {
+      "id": "0xc7198437980c041c805a1edcba50c1ce5db95118",
+      "name": "Tether USD",
+      "symbol": "USDT.e"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x74add13fb6a8df2b96b9f00ef6da5a09432351da",
+    "token0": {
+      "id": "0xa108e1d804c7e9b4354d3279c36589fab7b48290",
+      "name": "Amanix",
+      "symbol": "AMX"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x74f794b83553435329f56f3add75da1a0ddd1677",
+    "token0": {
+      "id": "0xb2a85c5ecea99187a977ac34303b80acbddfa208",
+      "name": "ROCO",
+      "symbol": "ROCO"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x74fb484b398add9cddc0a7bcb9948f56210d7d3f",
+    "token0": {
+      "id": "0x88a0f8318bf0ce19e999f1802bf5b12dc8d7cdfe",
+      "name": "Pleasure Coin",
+      "symbol": "NSFW"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x75d1fd674400d88c48c7f2f05c303c6568edf69d",
+    "token0": {
+      "id": "0x152b9d0fdc40c096757f570a51e494bd4b943e50",
+      "name": "Bitcoin",
+      "symbol": "BTC.b"
+    },
+    "token1": {
+      "id": "0x50b7545627a5162f82a992c33b87adc75187b218",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC.e"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x760f31e5a04152a423bd145d72170ca6ebc74c2f",
+    "token0": {
+      "id": "0x3a68085499b62286468a35b7d9dfc237ef2d3768",
+      "name": "UltravioletaToken",
+      "symbol": "UVT"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x795ae4c586a746c2c229d708436eac19037f44d2",
+    "token0": {
+      "id": "0x2775d5105276781b4b85ba6ea6a6653beed1dd32",
+      "name": "XAUt0",
+      "symbol": "XAUt0"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x7a468d2a79e619d9645b195b532aab2d012cafc3",
+    "token0": {
+      "id": "0x7a6bf020161deab23913ccfa5be43ad37aeb6ca8",
+      "name": "UFC Pulsar",
+      "symbol": "UFCPLSR"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x7d2fddd2c33e07581482c3056272aa2862d03500",
+    "token0": {
+      "id": "0x37b608519f91f70f2eeb0e5ed9af4061722e4f76",
+      "name": "SushiToken",
+      "symbol": "SUSHI.e"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x80b57c6b6e63cc9ebd5fa5dcd0a811d3e38faf15",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xed667dc80a45b77305cc395db56d997597dc6ddd",
+      "name": "TLOS",
+      "symbol": "TLOS"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x815482b1a596603fa036f4372e6ce3e25b380d17",
+    "token0": {
+      "id": "0xb2a85c5ecea99187a977ac34303b80acbddfa208",
+      "name": "ROCO",
+      "symbol": "ROCO"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x822d7107bd3b1b2f25aa7046be13830ff98b1635",
+    "token0": {
+      "id": "0x4f3c5c53279536ffcfe8bcafb78e612e933d53c6",
+      "name": "Phoenic Token",
+      "symbol": "PNIC"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x85d71803cbba118f2108b1dece37515934d8ca35",
+    "token0": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "token1": {
+      "id": "0xc4ce1a1eca2eff2d93d4109f4644c99b27a46b6e",
+      "name": "MEMESS10",
+      "symbol": "Mess10"
+    },
+    "feeTier": "500"
+  },
+  {
+    "id": "0x872ae790f4f1561358e2dca3604c50c8687ed0e9",
+    "token0": {
+      "id": "0x0a2fc7e7a383168055e8b616c9f340783e8dca65",
+      "name": "Avalanche \ud83d\udc8e ",
+      "symbol": "AVAX \ud83d\udc8e"
+    },
+    "token1": {
+      "id": "0x890dae343cfdd36c3b3e6aa1a38d36280e1bb71d",
+      "name": "Avalanche Snow",
+      "symbol": "SNOW"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x88853bc4fb8cb1efb21fdee695873120bece8bc7",
+    "token0": {
+      "id": "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
+      "name": "USD Coin",
+      "symbol": "USDC.e"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x8889d050bfcb104edc9a73629f5cab1d2d1bb06c",
+    "token0": {
+      "id": "0x41df729c20fc8792ed3687420a8666255a092e9a",
+      "name": "3 Exponential Growth",
+      "symbol": "^3EG"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x8a43554da0c3a2d6c2005c88c2097a24a4366773",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xc7198437980c041c805a1edcba50c1ce5db95118",
+      "name": "Tether USD",
+      "symbol": "USDT.e"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x8c29a143d26b053d777338670d2dbd865c3f75a9",
+    "token0": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0x8eaf84001447da898054d06edf6e4ebc010f33a1",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x96d559018029487b2b9382f7e2396ba3e71f6386",
+    "token0": {
+      "id": "0x0da67235dd5787d67955420c84ca1cecd4e5bb3b",
+      "name": "Wrapped MEMO",
+      "symbol": "wMEMO"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x9792832644692dae408be999c5a728ad095723cc",
+    "token0": {
+      "id": "0x5bc5664ebafec11351570ab7627bdd1daa76ad47",
+      "name": "Blackfort",
+      "symbol": "BXN"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x996d64eca0b55a310952cf04f316889bb87437f3",
+    "token0": {
+      "id": "0x0cbd6fadcf8096cc9a43d90b45f65826102e3ece",
+      "name": "CheckDot",
+      "symbol": "CDT"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x99b9e788c6b26e362ebe974391024c9c6a0c473e",
+    "token0": {
+      "id": "0x70928e5b188def72817b7775f0bf6325968e563b",
+      "name": "LUNA",
+      "symbol": "LUNA"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x9a8e99c90b76af83ba61decc9d2e47276f0833f0",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xb599c3590f42f8f995ecfa0f85d2980b76862fc1",
+      "name": "UST",
+      "symbol": "UST"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0x9befc51f2ac9d611f6f61ecac3e9b009baba5f19",
+    "token0": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x9c74d0d482c93bc3ccd799609f2d5b0cfc5267a3",
+    "token0": {
+      "id": "0x5bd5a551fb2785edd68ec8532eae29baca6cb84a",
+      "name": "univax",
+      "symbol": "univax"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0x9f5908534b1eab25307659f9577f3c5bbf704cd6",
+    "token0": {
+      "id": "0x1703cb0f762d2a435199b64ea47e5349b7c17480",
+      "name": "Sui",
+      "symbol": "SUI"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0xa798fe265ea44bd9e4d636e080aacc1bb7818a20",
+    "token0": {
+      "id": "0x7ce47348f20d6bb03b995867251aa8eb4807d123",
+      "name": "ADBYTES",
+      "symbol": "ADBYTES"
+    },
+    "token1": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xa8c958955829c66e168f77f51f1e3fde01d7bc34",
+    "token0": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "token1": {
+      "id": "0xb599c3590f42f8f995ecfa0f85d2980b76862fc1",
+      "name": "UST",
+      "symbol": "UST"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xab20361e3c0ddbd113d0108ec64de92afc107ec6",
+    "token0": {
+      "id": "0x0555e30da8f98308edb960aa94c0db47230d2b9c",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC"
+    },
+    "token1": {
+      "id": "0x50b7545627a5162f82a992c33b87adc75187b218",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC.e"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xaede617e9e962a7f77cc850085f27a9ed3da4d8e",
+    "token0": {
+      "id": "0x6f43ff77a9c0cf552b5b653268fbfe26a052429b",
+      "name": "LAMBO",
+      "symbol": "LAMBO"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xaff1263278ed888ae5cfb1ce9ced39eaf8258e50",
+    "token0": {
+      "id": "0x00000000efe302beaa2b3e6e1b18d08d69a9012a",
+      "name": "AUSD",
+      "symbol": "AUSD"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xb039dbe02651eeaa7f3450fe5962c885a069b6c3",
+    "token0": {
+      "id": "0x7d87aa556c2d0b94cefb3b122e627c08ff78d10d",
+      "name": "Ponos ant",
+      "symbol": "PNT"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0xb0a491327c86dabaade41e61044c7ad5a4f1a511",
+    "token0": {
+      "id": "0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd",
+      "name": "JoeToken",
+      "symbol": "JOE"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0xb92b4336330531c5129420474c8738214bf33cc1",
+    "token0": {
+      "id": "0x8d88e48465f30acfb8dac0b3e35c9d6d7d36abaf",
+      "name": "Canary",
+      "symbol": "CNR"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "500"
+  },
+  {
+    "id": "0xba4371923e4c8dca20bcc4b4a0058d754bf6d0c2",
+    "token0": {
+      "id": "0x8c2a223bb9ca1bee512e3b735e4547dfebded0c3",
+      "name": "nova",
+      "symbol": "Nova"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xbea3b04d2a5f830ba3e52a4886c58ce4de2ae4eb",
+    "token0": {
+      "id": "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab",
+      "name": "Wrapped Ether",
+      "symbol": "WETH.e"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "500"
+  },
+  {
+    "id": "0xbf30b874d89198160e24df3e7d814d683ca89b9b",
+    "token0": {
+      "id": "0xb2a85c5ecea99187a977ac34303b80acbddfa208",
+      "name": "ROCO",
+      "symbol": "ROCO"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "500"
+  },
+  {
+    "id": "0xc0b6dc34777d66ae1537455abf65760a1dbd0f87",
+    "token0": {
+      "id": "0x6145e8a910ae937913426bf32de2b26039728acf",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0xc4a3575cfbceb713c52b89e9d9a369f33dd96a69",
+    "token0": {
+      "id": "0x9c9e5fd8bbc25984b178fdce6117defa39d2db39",
+      "name": "BUSD Token",
+      "symbol": "BUSD"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0xc96f42ce7e70141bdc555cebdadf88c746dcc36c",
+    "token0": {
+      "id": "0xa752b27a0007d754f74035abf46ad39bdf066fa8",
+      "name": "innovation coin ",
+      "symbol": "innovate"
+    },
+    "token1": {
+      "id": "0xc7198437980c041c805a1edcba50c1ce5db95118",
+      "name": "Tether USD",
+      "symbol": "USDT.e"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xc99e00ec0382f82d9d8cf1ad958ac5f349de5b26",
+    "token0": {
+      "id": "0x7d87aa556c2d0b94cefb3b122e627c08ff78d10d",
+      "name": "Ponos ant",
+      "symbol": "PNT"
+    },
+    "token1": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0xcb3b487190b0a4e6ec71439846f2efdda98aa644",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xc4ce1a1eca2eff2d93d4109f4644c99b27a46b6e",
+      "name": "MEMESS10",
+      "symbol": "Mess10"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0xcd21c58ffbc60ca09110df010a3c6f835dc82c07",
+    "token0": {
+      "id": "0xa752b27a0007d754f74035abf46ad39bdf066fa8",
+      "name": "innovation coin ",
+      "symbol": "innovate"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0xcf551b1ea3eb2ee0140bba3b863543cb3660a57c",
+    "token0": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "token1": {
+      "id": "0xc4ce1a1eca2eff2d93d4109f4644c99b27a46b6e",
+      "name": "MEMESS10",
+      "symbol": "Mess10"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0xcf9ca5d61602a200557d22d194c1a7adf43f510f",
+    "token0": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "token1": {
+      "id": "0xc0c5aa69dbe4d6dddfbc89c0957686ec60f24389",
+      "name": "XEN Crypto",
+      "symbol": "aXEN"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xd02a83ec0f5375b2f263ae751d19c38ded1771a9",
+    "token0": {
+      "id": "0x7a6bf020161deab23913ccfa5be43ad37aeb6ca8",
+      "name": "UFC Pulsar",
+      "symbol": "UFCPLSR"
+    },
+    "token1": {
+      "id": "0x7a842193d291840fc38b45f991c5b8cc908f8a7c",
+      "name": "Pulsar",
+      "symbol": "PLSR"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xd04073f32ae027fc3f87ff39795536c0f2340edd",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xd19abc09b7b36f7558929b97a866f499a26c2f83",
+      "name": "Wrapped Fantom",
+      "symbol": "WFTM"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0xd1c9c53aa8b2392032454e6cf78ee55deff6dab7",
+    "token0": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "token1": {
+      "id": "0xf2f13f0b7008ab2fa4a2418f4ccc3684e49d20eb",
+      "name": "Wrapped Matic",
+      "symbol": "WMATIC"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0xd36e6ab80e1b9a5b306c3a982211d7456a29051f",
+    "token0": {
+      "id": "0x89a8633bcad3af0951acc5137811ea21a17c37dc",
+      "name": "LAMA",
+      "symbol": "LAMA"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0xd85f305a5cac398fd3f04f0000f14c23cf614e5a",
+    "token0": {
+      "id": "0x1a952a6ae8c4d11906e2f65cb8d84902c00d0b6b",
+      "name": "ArbitraX ",
+      "symbol": "ARX"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0xd937a05df90918f584a17a168026cc06f9cb099d",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xda4b820efb9140c570758d7900f823f12e10c365",
+    "token0": {
+      "id": "0xa752b27a0007d754f74035abf46ad39bdf066fa8",
+      "name": "innovation coin ",
+      "symbol": "innovate"
+    },
+    "token1": {
+      "id": "0xbdef4444668ba0011e8b45f54b4bca4e7b786792",
+      "name": "PioneerToken",
+      "symbol": "Pioneer"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0xdeeb651bcab60e7a95201cbe8e3bf1d91d061fac",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xbd8cf2768acf8972ff85a316c5d15b52b7e02127",
+      "name": "Illuminati",
+      "symbol": "Illuminati"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xe147f382b3651c4abd21ff9f5c11952e51750dab",
+    "token0": {
+      "id": "0x37b608519f91f70f2eeb0e5ed9af4061722e4f76",
+      "name": "SushiToken",
+      "symbol": "SUSHI.e"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xe1552fcc5584096fa90b312b7df963b570d8ce84",
+    "token0": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "token1": {
+      "id": "0xc7198437980c041c805a1edcba50c1ce5db95118",
+      "name": "Tether USD",
+      "symbol": "USDT.e"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0xe395adceb33e21141b60017c7537a9947eb18674",
+    "token0": {
+      "id": "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab",
+      "name": "Wrapped Ether",
+      "symbol": "WETH.e"
+    },
+    "token1": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "feeTier": "500"
+  },
+  {
+    "id": "0xe5972a50b339c55b9d247ab0ead1f76ab6d2cc28",
+    "token0": {
+      "id": "0x1eac6b7a7c790d7ce9fa15b64c82b475d5d8711e",
+      "name": "CheeseToken",
+      "symbol": "CHEEZ"
+    },
+    "token1": {
+      "id": "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab",
+      "name": "Wrapped Ether",
+      "symbol": "WETH.e"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0xe730a5ad8992ef2225fdb4d8e860b982a0c0e29a",
+    "token0": {
+      "id": "0x57319d41f71e81f3c65f2a47ca4e001ebafd4f33",
+      "name": "JoeBar",
+      "symbol": "xJOE"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0xe8164b71feaf0dc58774a71a53d19e312a3ff9b6",
+    "token0": {
+      "id": "0x8ebaf22b6f053dffeaf46f4dd9efa95d89ba8580",
+      "name": "Uniswap",
+      "symbol": "UNI.e"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xe8be729699fd697af95aed669462a416b2232a89",
+    "token0": {
+      "id": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "TetherToken",
+      "symbol": "USDt"
+    },
+    "token1": {
+      "id": "0xb355f4f4cc84a9429a59d5c2b98d77016f7ec482",
+      "name": "BitcoinBR",
+      "symbol": "BTCBR"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0xea0ac4d387c62b3aebf589a35c3c43f17b3f8b0e",
+    "token0": {
+      "id": "0x590eb2920486486c2d9bb3eb651f73b81df87bcf",
+      "name": "bobcoin",
+      "symbol": "BOBC"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xedf6f45654bfd22bddcc76d2a38428b7c1bfc2db",
+    "token0": {
+      "id": "0x5d7d0f96fe19f9b4ca1831c084de84ab1da4a017",
+      "name": "IXVI",
+      "symbol": "IXVI"
+    },
+    "token1": {
+      "id": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC"
+    },
+    "feeTier": "500"
+  },
+  {
+    "id": "0xee043c0c29dd3d0ab9a2718cdd1badcba15c1cd9",
+    "token0": {
+      "id": "0x6144d5186cebff96f8e02f22c6001ed19670ad28",
+      "name": "USDC_TEST",
+      "symbol": "USDC_T"
+    },
+    "token1": {
+      "id": "0xad47a9b2bc081d074ec25a0953ddc11e650b1784",
+      "name": "USD_test2",
+      "symbol": "USD_T2"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xf040940ab3d9e6dc22d68d843db06020c8cb2e94",
+    "token0": {
+      "id": "0x78af99e93d42d5bdd428eae005378780d58ed84f",
+      "name": "TYLERMODOBAMAINU",
+      "symbol": "MOD"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0xf07e665b90299a121440a1125766de515d635c84",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xf39f9671906d8630812f9d9863bbef5d523c84ab",
+      "name": "Uniswap",
+      "symbol": "UNI"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0xf34d5862934bf788db7cc26ee33d213026ca013d",
+    "token0": {
+      "id": "0x152b9d0fdc40c096757f570a51e494bd4b943e50",
+      "name": "Bitcoin",
+      "symbol": "BTC.b"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "3000"
+  },
+  {
+    "id": "0xf50e74169df01297c54903367e069582b247a35a",
+    "token0": {
+      "id": "0x590eb2920486486c2d9bb3eb651f73b81df87bcf",
+      "name": "bobcoin",
+      "symbol": "BOBC"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0xf5cda98813e45a7889b568cfcb713fb20b612df6",
+    "token0": {
+      "id": "0x9302c05766b53d5d0e5eebffd7a494a790fc0229",
+      "name": "Garetto_V9",
+      "symbol": "G-ETTO_V9"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0xf63a9fdd899267d5d2c8f576e7266f4745e55202",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xc0c5aa69dbe4d6dddfbc89c0957686ec60f24389",
+      "name": "XEN Crypto",
+      "symbol": "aXEN"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0xf8ec7271d9765641b81e31679d38d830146724ac",
+    "token0": {
+      "id": "0x78cd59ef24cc49b814a45e22b79918e1ed973868",
+      "name": "test",
+      "symbol": "tst"
+    },
+    "token1": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "feeTier": "100"
+  },
+  {
+    "id": "0xfc1f125c0a9105f829e43ab1d2d427bf6818192d",
+    "token0": {
+      "id": "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab",
+      "name": "Wrapped Ether",
+      "symbol": "WETH.e"
+    },
+    "token1": {
+      "id": "0xd586e7f844cea2f87f50152665bcbc2c279d8d70",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI.e"
+    },
+    "feeTier": "10000"
+  },
+  {
+    "id": "0xfdb3bbc34e1a5c2c02ae9e28525a7be6b82327af",
+    "token0": {
+      "id": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX"
+    },
+    "token1": {
+      "id": "0xc4ce1a1eca2eff2d93d4109f4644c99b27a46b6e",
+      "name": "MEMESS10",
+      "symbol": "Mess10"
+    },
+    "feeTier": "500"
+  }
+]

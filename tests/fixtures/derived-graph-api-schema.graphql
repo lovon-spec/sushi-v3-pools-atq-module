@@ -1,0 +1,48 @@
+# Minimal derived Graph Node API surface for the pinned Sushi v3 entity schema.
+# This is an offline validation fixture, not live API introspection. It models
+# the generated ID String filter and Bytes block-hash scalar at issue, along with
+# only the fields selected by this module. See README.md for source provenance.
+scalar Bytes
+scalar BigInt
+
+input Block_height {
+  hash: Bytes
+  number: Int
+  number_gte: Int
+}
+
+input Pool_filter {
+  id_gt: String
+}
+
+enum Pool_orderBy { id }
+enum OrderDirection { asc desc }
+
+type _Block_ {
+  number: Int!
+  hash: Bytes
+}
+
+type _Meta_ {
+  deployment: String!
+  hasIndexingErrors: Boolean!
+  block: _Block_!
+}
+
+type Token {
+  name: String!
+  symbol: String!
+}
+
+type Pool {
+  id: ID!
+  token0: Token!
+  token1: Token!
+  feeTier: BigInt!
+}
+
+type Query {
+  _meta(block: Block_height): _Meta_
+  pools(first: Int, orderBy: Pool_orderBy, orderDirection: OrderDirection,
+        where: Pool_filter, block: Block_height): [Pool!]!
+}
