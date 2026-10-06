@@ -140,7 +140,7 @@ const PROTOCOL_NETWORKS: Record<string, { network: string }> = {
 };
 
 // The Graph API queries and types
-interface PoolToken { name: string; symbol: string; }
+interface PoolToken { id: string; name: string; symbol: string; }
 interface Pool { id: string; token0: PoolToken; token1: PoolToken; feeTier: string; }
 interface SourceMeta {
   deployment: string;
@@ -166,8 +166,8 @@ query GetPools($lastId: String!, $blockHash: Bytes!) {
   pools(first: 1000, orderBy: id, orderDirection: asc,
         where: { id_gt: $lastId }, block: { hash: $blockHash }) {
     id
-    token0 { name symbol }
-    token1 { name symbol }
+    token0 { id name symbol }
+    token1 { id name symbol }
     feeTier
   }
 }
@@ -229,11 +229,27 @@ function containsHtmlOrMarkdown(text: string): boolean {
 }
 
 function validToken(token: PoolToken): boolean {
-  if (!token || typeof token.name !== "string" || typeof token.symbol !== "string") {
+  if (!token || typeof token.id !== "string" || !/^0x[0-9a-fA-F]{40}$/.test(token.id) ||
+      typeof token.name !== "string" || typeof token.symbol !== "string") {
     throw new RetrievalError("Invalid Sushi v3 token metadata was returned.");
   }
   return [token.name, token.symbol].some(value => value.trim() !== "") &&
     [token.name, token.symbol].every(value => !containsHtmlOrMarkdown(value));
+}
+
+// Angle's official list binds these chain/address identities to EURA:
+// https://github.com/AngleProtocol/angle-token-list/blob/ff24d36738f8a7814e6f78f6ec57483ea9c4dbc3/ERC20_LIST.json
+const EURA_ADDRESSES: Record<string, string> = {
+  "100": "0x4b1e2c2762667331bc91648052f646d1b0d35984",
+  "137": "0xe0b52e49357fd4daf2c15e02058dce6bc0057db4",
+};
+function normalizeToken(chainId: string, token: PoolToken): PoolToken {
+  if (token.id.toLowerCase() !== EURA_ADDRESSES[chainId]) return token;
+  // Correct only the stale pre-rebrand metadata, not unrelated or future names.
+  // Pool membership, contract addresses and fees still come from the subgraph.
+  return { ...token,
+    name: token.name.trim() === "agEUR" ? "EURA (previously agEUR)" : token.name,
+    symbol: token.symbol.trim() === "agEUR" ? "EURA" : token.symbol };
 }
 
 function shortenName(value: string, budget: number): string {
@@ -266,7 +282,7 @@ function transformPoolsToTags(chainId: string, pools: Pool[]): ContractTag[] {
     const suffix = `-${fee}% Pool`;
     const budget = 50 - suffix.length;
     if (budget < 3) throw new RetrievalError("The pool fee cannot fit in a valid public name.");
-    const tokens = [pool.token0, pool.token1];
+    const tokens = [pool.token0, pool.token1].map(token => normalizeToken(chainId, token));
     const symbols = tokens.map(token => token.symbol.trim() ? token.symbol : token.name).join("/");
     const names = tokens.map(token => token.name.trim() ? token.name : token.symbol).join("/");
     const identifierLabel = tokens.every(token => token.symbol.trim()) ? "Symbol" : "Token identifiers";

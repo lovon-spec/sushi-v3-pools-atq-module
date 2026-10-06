@@ -12,6 +12,8 @@ const BLOCK_HASH = "0x745d2e8ed586b82c34691982d7007ed8ed0d96d60c95fd3faf7124ec86
 const OTHER_HASH = `0x${"a".repeat(64)}`;
 const ZERO_ADDRESS = `0x${"0".repeat(40)}`;
 const BLOCK_NUMBER = 96_575_449;
+const TOKEN0_ID = `0x${"1".repeat(40)}`;
+const TOKEN1_ID = `0x${"2".repeat(40)}`;
 const nativeFetch = globalThis.fetch;
 globalThis.fetch = () => { throw new Error("Network transport is disabled."); };
 after(() => { globalThis.fetch = nativeFetch; });
@@ -31,13 +33,20 @@ function meta(overrides = {}) {
 }
 
 function row(number, overrides = {}) {
-  return {
+  const pool = {
     id: `0x${number.toString(16).padStart(40, "0")}`,
     token0: { name: "Alpha", symbol: "A" },
     token1: { name: "Beta", symbol: "B" },
     feeTier: "3000",
     ...overrides,
   };
+  // Synthetic metadata overrides inherit only a synthetic identity. Explicitly
+  // invalid IDs remain invalid; missing-ID tests delete the field afterwards.
+  for (const [key, id] of [["token0", TOKEN0_ID], ["token1", TOKEN1_ID]]) {
+    const token = pool[key];
+    if (token && typeof token === "object" && !Object.hasOwn(token, "id")) pool[key] = { id, ...token };
+  }
+  return pool;
 }
 
 const fullPage = () => Array.from({ length: 1000 }, (_, index) => row(index + 1));
@@ -135,6 +144,8 @@ test("canonical gateway, Bearer authentication, redirect refusal, and correct Gr
   assert.match(poolArguments[1], /block\s*:\s*\{\s*hash\s*:\s*\$blockHash\s*\}/);
   assert.match(query, /\b_meta\s*\(\s*block\s*:\s*\{\s*hash\s*:\s*\$blockHash\s*\}\s*\)/);
   assert.equal(variables.blockHash, BLOCK_HASH);
+  assert.match(query, /token0\s*\{\s*id\s+name\s+symbol\s*\}/);
+  assert.match(query, /token1\s*\{\s*id\s+name\s+symbol\s*\}/);
   assert.ok(["", ZERO_ADDRESS].includes(variables.lastId));
 });
 
@@ -393,6 +404,99 @@ test("a blank name or symbol uses the other source identifier without omitting t
       }
     }
   }
+});
+
+test("missing or malformed token IDs fail rather than applying a guessed identity", async (t) => {
+  for (const side of ["token0", "token1"]) {
+    for (const id of [undefined, null, "", "0x1234", `0x${"g".repeat(40)}`, 123]) {
+      await t.test(`${side}: ${String(id)}`, async () => {
+        const pool = row(1);
+        pool[side].id = id;
+        if (id === undefined) delete pool[side].id;
+        await rejectedResponses(preflight(), page([pool]));
+      });
+    }
+  }
+});
+
+const EURA_CHAINS = [
+  { chain: "100", id: "0x4b1e2c2762667331bc91648052f646d1b0d35984", deployment: "Qmadb2zb5P2avAy7zs454bLoEycfA6qzk61LwmDVJExUWg" },
+  { chain: "137", id: "0xe0b52e49357fd4daf2c15e02058dce6bc0057db4", deployment: "QmYAA8ymppZN4APXnqUhVNEnCwN1ZqHJyWsbmXuzpQ25Km" },
+];
+async function tagsOn(config, rows) {
+  const metadata = meta({ deployment: config.deployment });
+  const calls = queue(preflight(metadata), page(rows, metadata));
+  const tags = await returnTags(config.chain, KEY);
+  assert.equal(calls.length, 2, "Normalization must not add a non-subgraph request");
+  assert.ok(calls.every(call => call.url.endsWith(config.deployment)));
+  return tags;
+}
+
+test("EURA normalization is bound to both chain and token address on either pool side", async (t) => {
+  for (const config of EURA_CHAINS) {
+    for (const side of ["token0", "token1"]) {
+      await t.test(`${config.chain}/${side}`, async () => {
+        const token = { id: config.id.toUpperCase().replace("0X", "0x"), name: "agEUR", symbol: "agEUR" };
+        const rows = [row(1, { [side]: token }), row(2, { [side]: { ...token, id: TOKEN0_ID } })];
+        const [renamed, untouched] = await tagsOn(config, rows);
+        assert.equal(renamed["Public Name Tag"], side === "token0" ? "EURA/B-0.3% Pool" : "A/EURA-0.3% Pool");
+        assert.ok(renamed["Public Note"].includes("EURA (previously agEUR)"));
+        assert.ok(untouched["Public Name Tag"].includes("agEUR"));
+        assert.equal(renamed["Contract Address"], `eip155:${config.chain}:${rows[0].id}`);
+        assert.equal(renamed["Project Name"], "Sushi v3");
+        assert.deepEqual(token, rows[0][side], "Source token objects are not mutated");
+        assert.ok(!JSON.stringify(rows).includes("previously"));
+      });
+    }
+    const other = EURA_CHAINS.find(c => c.chain !== config.chain);
+    const [wrongChain] = await tagsOn(config, [row(1, { token0: { id: other.id, name: "agEUR", symbol: "agEUR" } })]);
+    assert.equal(wrongChain["Public Name Tag"], "agEUR/B-0.3% Pool");
+  }
+  const [otherChain] = await tagsFor([row(1, { token0: { id: EURA_CHAINS[0].id, name: "agEUR", symbol: "agEUR" } })]);
+  assert.equal(otherChain["Public Name Tag"], "agEUR/B-0.3% Pool");
+});
+
+test("only stale EURA fields change; current, future, partial and unrelated metadata is preserved", async (t) => {
+  const config = EURA_CHAINS[0];
+  const cases = [
+    ["agEUR", "EURA", "EURA (previously agEUR)", "EURA"],
+    ["EURA (previously agEUR)", "agEUR", "EURA (previously agEUR)", "EURA"],
+    ["EURA (previously agEUR)", "EURA", "EURA (previously agEUR)", "EURA"],
+    ["Future Name", "FUTURE", "Future Name", "FUTURE"],
+    [" ", "agEUR", "EURA", "EURA"],
+    ["agEUR", " ", "EURA (previously agEUR)", "EURA (previously agEUR)"],
+    [" agEUR ", " agEUR ", "EURA (previously agEUR)", "EURA"],
+    ["agEUR unrelated", "agEUR.other", "agEUR unrelated", "agEUR.other"],
+  ];
+  for (const [name, symbol, finalName, finalSymbol] of cases) {
+    await t.test(`${JSON.stringify(name)}/${JSON.stringify(symbol)}`, async () => {
+      const [tag] = await tagsOn(config, [row(1, { token0: { id: config.id, name, symbol } })]);
+      assert.equal(tag["Public Name Tag"], `${finalSymbol}/B-0.3% Pool`);
+      assert.ok(tag["Public Note"].includes(`${finalName}/Beta`));
+    });
+  }
+});
+
+test("renamed EURA pools still receive collision-safe labels without changing membership", async () => {
+  const config = EURA_CHAINS[0];
+  const rows = [
+    row(1, { id: `0x12345678${"0".repeat(32)}`, token0: { id: config.id, name: "agEUR", symbol: "agEUR" } }),
+    row(2, { id: `0x23456789${"0".repeat(32)}`, token0: { name: "Another EURA", symbol: "EURA" } }),
+  ];
+  const tags = await tagsOn(config, rows);
+  assert.equal(tags.length, 2);
+  assert.deepEqual(tags.map(t => t["Public Name Tag"]), ["EURA/B-0.3% Pool (0x12345678)", "EURA/B-0.3% Pool (0x23456789)"]);
+  assert.ok(tags.every(tag => tag["Public Name Tag"].length <= 50));
+});
+
+test("EURA identity does not exempt invalid metadata or fees from existing validation", async () => {
+  const config = EURA_CHAINS[0];
+  const tags = await tagsOn(config, [row(1, { token0: { id: config.id, name: "<b>agEUR</b>", symbol: "agEUR" } }), row(2)]);
+  assert.equal(tags.length, 1);
+  assert.equal(tags[0]["Contract Address"], `eip155:${config.chain}:${row(2).id}`);
+  const metadata = meta({ deployment: config.deployment });
+  queue(preflight(metadata), page([row(1, { feeTier: "invalid", token0: { id: config.id, name: "agEUR", symbol: "agEUR" } })], metadata));
+  await assert.rejects(returnTags(config.chain, KEY), assertSafeError);
 });
 
 test("tokens with neither name nor symbol remain excluded, without dropping other rows", async (t) => {

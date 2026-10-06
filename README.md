@@ -12,6 +12,8 @@ Cursor variables use the String scalar for the configured Sushi entity IDs. Tags
 
 When multiple pools would receive the same public name, their labels include a distinguishing pool-address prefix and their notes include the full pool address. Prefixes expand if needed; a full-address label is used when a distinguishing prefix leaves insufficient space for a token-pair label. This comparison covers the complete snapshot, not individual pages. No otherwise valid pool is dropped to resolve a name collision.
 
+For the two EURA contracts on Gnosis and Polygon identified in [Angle's official token list](https://github.com/AngleProtocol/angle-token-list/blob/ff24d36738f8a7814e6f78f6ec57483ea9c4dbc3/ERC20_LIST.json), stale `agEUR` fields are normalized to the listed `EURA` symbol and `EURA (previously agEUR)` name. [Angle documents the rebrand](https://github.com/AngleProtocol/angle-docs/blob/101aa51e0374eefe269981388d7997819f3772c9/README.md). Matching uses both chain and queried token address; unrelated tokens and other metadata are unchanged. Pool addresses, pair membership and fees remain query-derived, and no extra service is queried.
+
 ## Build and interface
 
 Use Node.js and Yarn Classic with the committed dependency lock:

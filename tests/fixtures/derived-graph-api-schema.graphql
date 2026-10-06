@@ -30,6 +30,7 @@ type _Meta_ {
 }
 
 type Token {
+  id: ID!
   name: String!
   symbol: String!
 }
