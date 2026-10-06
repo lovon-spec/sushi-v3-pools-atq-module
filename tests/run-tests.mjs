@@ -81,10 +81,26 @@ async function rejectedResponses(...responses) {
   return calls;
 }
 
-test("the 142 frozen Avalanche rows produce exactly the reviewed tags", async () => {
+test("the 142 frozen Avalanche rows preserve all fields except the two colliding instance labels", async () => {
   assert.equal(snapshot.length, 142);
   assert.equal(expectedTags.length, 142);
-  assert.deepEqual(await tagsFor(snapshot), expectedTags);
+  const updated = structuredClone(expectedTags);
+  const instances = new Map([
+    ["0x110e68959f40802d6fc017094d91ee6ca18a43f8", "0x110e6895"],
+    ["0x48c99d1544cd27a9c2c2a9e00542c0f102501a95", "0x48c99d15"],
+  ]);
+  let changed = 0;
+  for (const tag of updated) {
+    const address = tag["Contract Address"].split(":")[2];
+    const prefix = instances.get(address);
+    if (!prefix) continue;
+    assert.equal(tag["Public Name Tag"], "CS/WAVAX-0.01% Pool");
+    tag["Public Name Tag"] = `CS/WAVAX-0.01% Pool (${prefix})`;
+    tag["Public Note"] += `. Pool address: ${address}.`;
+    changed++;
+  }
+  assert.equal(changed, 2);
+  assert.deepEqual(await tagsFor(snapshot), updated);
 });
 
 test("canonical gateway, Bearer authentication, redirect refusal, and correct GraphQL scalars", async () => {
@@ -174,6 +190,66 @@ test("an exact 1,000-row page requests the terminating empty page", async () => 
 
 test("an anchored empty page returns no tags", async () => {
   assert.deepEqual(await tagsFor([]), []);
+});
+
+test("identical token metadata and fees produce distinct instance labels", async () => {
+  const rows = [
+    row(1, { id: `0x12345678${"0".repeat(32)}` }),
+    row(2, { id: `0x23456789${"0".repeat(32)}` }),
+  ];
+  const tags = await tagsFor(rows);
+  assert.deepEqual(tags.map(tag => tag["Public Name Tag"]), [
+    "A/B-0.3% Pool (0x12345678)", "A/B-0.3% Pool (0x23456789)",
+  ]);
+  tags.forEach((tag, i) => {
+    assert.ok(tag["Public Note"].endsWith(`Pool address: ${rows[i].id}.`));
+    assert.equal(tag["Contract Address"], `eip155:${CHAIN}:${rows[i].id}`);
+  });
+});
+
+test("address prefixes expand until colliding names are distinct", async () => {
+  const rows = [
+    row(1, { id: `0x1234567800${"0".repeat(30)}` }),
+    row(2, { id: `0x1234567811${"0".repeat(30)}` }),
+  ];
+  const tags = await tagsFor(rows);
+  assert.deepEqual(tags.map(tag => tag["Public Name Tag"]), [
+    "A/B-0.3% Pool (0x1234567800)", "A/B-0.3% Pool (0x1234567811)",
+  ]);
+});
+
+test("long shared address prefixes use exact full-address labels without dropping pools", async () => {
+  const rows = [row(1), row(2)];
+  const tags = await tagsFor(rows);
+  assert.deepEqual(tags.map(tag => tag["Public Name Tag"]), rows.map(pool => `Pool ${pool.id}`));
+  assert.ok(tags.every(tag => tag["Public Name Tag"].length <= 50));
+});
+
+test("truncation collisions and Unicode labels remain distinct within 50 code units", async () => {
+  const rows = [
+    row(1, { id: `0x12345678${"0".repeat(32)}`, token0: { name: "Alpha", symbol: "😀".repeat(30) + "A" } }),
+    row(2, { id: `0x23456789${"0".repeat(32)}`, token0: { name: "Beta", symbol: "😀".repeat(30) + "B" } }),
+  ];
+  const tags = await tagsFor(rows);
+  assert.equal(new Set(tags.map(tag => tag["Public Name Tag"])).size, 2);
+  for (const tag of tags) {
+    assert.ok(tag["Public Name Tag"].length <= 50);
+    assert.ok(!/[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]/u.test(tag["Public Name Tag"]));
+    assert.match(tag["Public Name Tag"], /-0\.3% Pool \(0x[0-9a-f]+\)$/);
+  }
+});
+
+test("collisions are resolved across page boundaries, not just within each page", async () => {
+  const rows = Array.from({ length: 1001 }, (_, index) => row(index + 1, {
+    token0: { name: `Token ${index}`, symbol: index === 1000 ? "T0" : `T${index}` },
+  }));
+  queue(preflight(), page(rows.slice(0, 1000)), page(rows.slice(1000)));
+  const tags = await returnTags(CHAIN, KEY);
+  assert.equal(tags.length, 1001);
+  assert.equal(new Set(tags.map(tag => tag["Public Name Tag"])).size, 1001);
+  assert.equal(tags[0]["Public Name Tag"], `Pool ${rows[0].id}`);
+  assert.equal(tags[1000]["Public Name Tag"], `Pool ${rows[1000].id}`);
+  assert.equal(tags[1]["Public Name Tag"], "T1/B-0.3% Pool");
 });
 
 test("invalid preflight metadata fails before fetching any pools", async (t) => {

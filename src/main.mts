@@ -235,6 +235,17 @@ function validToken(token: PoolToken): boolean {
   return [token.name, token.symbol].every(value => value.trim() !== "" && !containsHtmlOrMarkdown(value));
 }
 
+function shortenName(value: string, budget: number): string {
+  if (value.length <= budget) return value;
+  let shortened = "";
+  // Count conservatively in UTF-16 units without cutting a surrogate pair.
+  for (const character of value) {
+    if (shortened.length + character.length > budget - 3) break;
+    shortened += character;
+  }
+  return shortened + "...";
+}
+
 function transformPoolsToTags(chainId: string, pools: Pool[]): ContractTag[] {
   const tags: ContractTag[] = [];
   for (const pool of pools) {
@@ -254,16 +265,7 @@ function transformPoolsToTags(chainId: string, pools: Pool[]): ContractTag[] {
     const budget = 50 - suffix.length;
     if (budget < 3) throw new RetrievalError("The pool fee cannot fit in a valid public name.");
     const symbols = `${pool.token0.symbol}/${pool.token1.symbol}`;
-    // Count conservatively in UTF-16 units, but never cut a surrogate pair in half.
-    let displaySymbols = symbols;
-    if (symbols.length > budget) {
-      displaySymbols = "";
-      for (const character of symbols) {
-        if (displaySymbols.length + character.length > budget - 3) break;
-        displaySymbols += character;
-      }
-      displaySymbols += "...";
-    }
+    const displaySymbols = shortenName(symbols, budget);
     const publicName = displaySymbols + suffix;
     const note = `Sushi v3's ${pool.token0.name}/${pool.token1.name} (Symbol: ${pool.token0.symbol}/${pool.token1.symbol}) pool, with ${fee}% fee tier, on ${PROTOCOL_NETWORKS[chainId].network} network`;
     // Also inspect composed fields: delimiters from different source fields can pair.
@@ -274,6 +276,36 @@ function transformPoolsToTags(chainId: string, pools: Pool[]): ContractTag[] {
       "UI/Website Link": "https://www.sushi.com/", "Public Note": note });
   }
   return tags;
+}
+
+function differentiateInstances(tags: ContractTag[]): ContractTag[] {
+  const counts = new Map<string, number>();
+  for (const tag of tags) {
+    const name = tag["Public Name Tag"];
+    counts.set(name, (counts.get(name) ?? 0) + 1);
+  }
+  // Token names/symbols can repeat. Resolve label collisions across the complete
+  // snapshot, including different pages, without omitting any otherwise valid pool.
+  for (let digits = 8; digits <= 40; digits += 2) {
+    const distinct = tags.map(tag => {
+      const name = tag["Public Name Tag"];
+      if (counts.get(name) === 1) return tag;
+      const address = tag["Contract Address"].split(":")[2].toLowerCase();
+      const suffix = name.match(/-\d+(?:\.\d+)?% Pool$/)?.[0];
+      if (!suffix) throw new RetrievalError("Invalid pool name suffix.");
+      const marker = ` (0x${address.slice(2, 2 + digits)})`;
+      const budget = 50 - suffix.length - marker.length;
+      // A very long shared address prefix can leave no useful symbol budget.
+      // The full pool address is an exact, self-contained identifier in that case.
+      const publicName = budget >= 3
+        ? shortenName(name.slice(0, -suffix.length), budget) + suffix + marker
+        : `Pool ${address}`;
+      return { ...tag, "Public Name Tag": publicName,
+        "Public Note": `${tag["Public Note"]}. Pool address: ${address}.` };
+    });
+    if (new Set(distinct.map(tag => tag["Public Name Tag"])).size === tags.length) return distinct;
+  }
+  throw new RetrievalError("Pool instances could not be differentiated.");
 }
 
 class TagService implements ITagService {
@@ -306,7 +338,7 @@ class TagService implements ITagService {
         previous = pool.id.toLowerCase();
       }
       allTags.push(...transformPoolsToTags(chainId, pools));
-      if (pools.length < 1000) return allTags;
+      if (pools.length < 1000) return differentiateInstances(allTags);
       lastId = pools[pools.length - 1].id;
     }
   };
