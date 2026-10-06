@@ -232,7 +232,8 @@ function validToken(token: PoolToken): boolean {
   if (!token || typeof token.name !== "string" || typeof token.symbol !== "string") {
     throw new RetrievalError("Invalid Sushi v3 token metadata was returned.");
   }
-  return [token.name, token.symbol].every(value => value.trim() !== "" && !containsHtmlOrMarkdown(value));
+  return [token.name, token.symbol].some(value => value.trim() !== "") &&
+    [token.name, token.symbol].every(value => !containsHtmlOrMarkdown(value));
 }
 
 function shortenName(value: string, budget: number): string {
@@ -255,8 +256,9 @@ function transformPoolsToTags(chainId: string, pools: Pool[]): ContractTag[] {
         Number(pool.feeTier) > 0xffffff) {
       throw new RetrievalError("Invalid Sushi v3 pool fee was returned.");
     }
-    // Empty or formatted token metadata would produce invalid ATR entries.
-    // Exclude those rows without inventing replacement names or altering source text.
+    // Skip only tokens with no usable identifier, or metadata that would put
+    // HTML/Markdown in the emitted fields. A missing name or symbol alone is
+    // not grounds to omit a pool: use its other source-provided identifier.
     const token0Valid = validToken(pool.token0);
     const token1Valid = validToken(pool.token1);
     if (!token0Valid || !token1Valid) continue;
@@ -264,10 +266,13 @@ function transformPoolsToTags(chainId: string, pools: Pool[]): ContractTag[] {
     const suffix = `-${fee}% Pool`;
     const budget = 50 - suffix.length;
     if (budget < 3) throw new RetrievalError("The pool fee cannot fit in a valid public name.");
-    const symbols = `${pool.token0.symbol}/${pool.token1.symbol}`;
+    const tokens = [pool.token0, pool.token1];
+    const symbols = tokens.map(token => token.symbol.trim() ? token.symbol : token.name).join("/");
+    const names = tokens.map(token => token.name.trim() ? token.name : token.symbol).join("/");
+    const identifierLabel = tokens.every(token => token.symbol.trim()) ? "Symbol" : "Token identifiers";
     const displaySymbols = shortenName(symbols, budget);
     const publicName = displaySymbols + suffix;
-    const note = `Sushi v3's ${pool.token0.name}/${pool.token1.name} (Symbol: ${pool.token0.symbol}/${pool.token1.symbol}) pool, with ${fee}% fee tier, on ${PROTOCOL_NETWORKS[chainId].network} network`;
+    const note = `Sushi v3's ${names} (${identifierLabel}: ${symbols}) pool, with ${fee}% fee tier, on ${PROTOCOL_NETWORKS[chainId].network} network`;
     // Also inspect composed fields: delimiters from different source fields can pair.
     if (containsHtmlOrMarkdown(publicName) || containsHtmlOrMarkdown(note)) continue;
     if (publicName.length > 50) throw new RetrievalError("Invalid public name length.");

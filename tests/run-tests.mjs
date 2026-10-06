@@ -375,16 +375,60 @@ test("malformed token metadata types fail safely", async (t) => {
   }
 });
 
-test("empty token metadata is skipped without dropping other rows", async (t) => {
-  for (const field of ["name", "symbol"]) {
+test("a blank name or symbol uses the other source identifier without omitting the pool", async (t) => {
+  for (const token of ["token0", "token1"]) {
+    for (const field of ["name", "symbol"]) {
+      for (const value of ["", "   ", "\t\n"]) {
+        await t.test(`${token}.${field}: ${JSON.stringify(value)}`, async () => {
+          const partial = row(1);
+          partial[token][field] = value;
+          const [tag] = await tagsFor([partial]);
+          assert.equal(tag["Contract Address"], `eip155:${CHAIN}:${partial.id}`);
+          const identifiers = [partial.token0, partial.token1].map(t => t.symbol.trim() ? t.symbol : t.name).join("/");
+          const names = [partial.token0, partial.token1].map(t => t.name.trim() ? t.name : t.symbol).join("/");
+          const label = field === "symbol" ? "Token identifiers" : "Symbol";
+          assert.equal(tag["Public Name Tag"], `${identifiers}-0.3% Pool`);
+          assert.equal(tag["Public Note"], `Sushi v3's ${names} (${label}: ${identifiers}) pool, with 0.3% fee tier, on Avalanche C network`);
+        });
+      }
+    }
+  }
+});
+
+test("tokens with neither name nor symbol remain excluded, without dropping other rows", async (t) => {
+  for (const token of ["token0", "token1"]) {
     for (const value of ["", "   ", "\t\n"]) {
-      await t.test(`${field}: ${JSON.stringify(value)}`, async () => {
-        const invalid = row(1, { token0: { name: "Alpha", symbol: "A", [field]: value } });
-        const tags = await tagsFor([invalid, row(2)]);
+      await t.test(`${token}: ${JSON.stringify(value)}`, async () => {
+        const unusable = row(1, { [token]: { name: value, symbol: value } });
+        const tags = await tagsFor([unusable, row(2)]);
         assert.equal(tags.length, 1);
         assert.equal(tags[0]["Contract Address"], `eip155:${CHAIN}:${row(2).id}`);
       });
     }
+  }
+});
+
+test("a missing field on each token still produces truthful identifiers", async () => {
+  const [tag] = await tagsFor([row(1, {
+    token0: { name: "", symbol: "A" }, token1: { name: "Beta", symbol: "" },
+  })]);
+  assert.equal(tag["Public Name Tag"], "A/Beta-0.3% Pool");
+  assert.equal(tag["Public Note"], "Sushi v3's A/Beta (Token identifiers: A/Beta) pool, with 0.3% fee tier, on Avalanche C network");
+});
+
+test("nonempty promotional symbols are literal metadata, not grounds for exclusion", async () => {
+  const symbols = [
+    "!Ads BTC Casino www.MaticSlot.io", "Ads: POL Casino www.MaticSlot.io",
+    "Ads: BNB Casino www.MaticSlot.io", "!Ads ETH Casino www.MaticSlot.io",
+  ];
+  const rows = symbols.map((symbol, index) => row(index + 1, {
+    token0: { name: " ", symbol }, token1: { name: "SushiToken (PoS)", symbol: "SUSHI" }, feeTier: "100",
+  }));
+  const tags = await tagsFor(rows);
+  assert.equal(tags.length, rows.length);
+  for (let index = 0; index < tags.length; index++) {
+    assert.equal(tags[index]["Public Name Tag"], `${symbols[index]}/SUSHI-0.01% Pool`);
+    assert.ok(tags[index]["Public Note"].includes(`${symbols[index]}/SushiToken (PoS)`));
   }
 });
 
