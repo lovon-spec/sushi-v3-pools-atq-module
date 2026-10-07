@@ -500,6 +500,8 @@ test("EURA identity does not exempt invalid metadata or fees from existing valid
 });
 
 const POLYGON_IDENTITIES = [
+  ["0x8a037dbca8134ffc72c362e394e35e0cad618f85", "Euro Coin (PoS)", "EUROC", "Bridged EURC (Polygon PoS)", "EURC"],
+  ["0xc2132d05d31c914a87c6611c10748aeb04b58e8f", "(PoS) Tether USD", "USDT", "USDT0", "USDT0"],
   ["0xa3fa99a148fa48d14ed51d610c367c61876997f1", "miMATIC", "miMATIC", "MAI", "MAI"],
   ["0x2791bca1f2de4661ed88a30c99a7a9449aa84174", "USD Coin (PoS)", "USDC", "Bridged USDC (Polygon PoS)", "USDC.e"],
   ["0x24834bbec7e39ef42f4a75eaf8e5b6486d3f0e57", "Wrapped LUNA Token (PoS)", "LUNA", "Wrapped Luna Classic (Shuttle, Polygon PoS)", "LUNC"],
@@ -547,7 +549,7 @@ test("native USDC, other addresses and unrelated USDT are not renamed", async ()
   const rows = [
     row(1, { token0: { id: "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359", name: "USD Coin", symbol: "USDC" } }),
     row(2, { token0: { id: TOKEN0_ID, name: "LUNA", symbol: "LUNA" } }),
-    row(3, { token0: { id: "0xc2132d05d31c914a87c6611c10748aeb04b58e8f", name: "(PoS) Tether USD", symbol: "USDT" } }),
+    row(3, { token0: { id: TOKEN0_ID, name: "(PoS) Tether USD", symbol: "USDT" } }),
   ];
   const tags = await tagsOn(POLYGON, rows);
   assert.deepEqual(tags.map(t => t["Public Name Tag"]), ["USDC/B-0.3% Pool", "LUNA/B-0.3% Pool", "USDT/B-0.3% Pool"]);

@@ -249,7 +249,13 @@ const EURA_ADDRESSES: Record<string, string> = {
 // Original Terra bridge identities and Polygon PoS mapping are documented in README.md.
 // MAI identity and former name: https://docs.mai.finance/docs/functions/smart-contract-addresses
 // https://docs.mai.finance/docs/resources/qi-glossary
+// Circle's same-token EURC rename and Polygon PoS child mapping: README.md.
+// Polygon's in-place USDT0 upgrade: https://usdt0.to/ecosystem/polygon
 const POLYGON_TOKEN_NAMES: Record<string, [string, string, string, string]> = {
+  "0x8a037dbca8134ffc72c362e394e35e0cad618f85":
+    ["Euro Coin (PoS)", "Bridged EURC (Polygon PoS)", "EUROC", "EURC"],
+  "0xc2132d05d31c914a87c6611c10748aeb04b58e8f":
+    ["(PoS) Tether USD", "USDT0", "USDT", "USDT0"],
   "0xa3fa99a148fa48d14ed51d610c367c61876997f1":
     ["miMATIC", "MAI", "miMATIC", "MAI"],
   "0x2791bca1f2de4661ed88a30c99a7a9449aa84174":
