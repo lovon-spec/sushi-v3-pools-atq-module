@@ -499,6 +499,74 @@ test("EURA identity does not exempt invalid metadata or fees from existing valid
   await assert.rejects(returnTags(config.chain, KEY), assertSafeError);
 });
 
+const POLYGON_IDENTITIES = [
+  ["0xa3fa99a148fa48d14ed51d610c367c61876997f1", "miMATIC", "miMATIC", "MAI", "MAI"],
+  ["0x2791bca1f2de4661ed88a30c99a7a9449aa84174", "USD Coin (PoS)", "USDC", "Bridged USDC (Polygon PoS)", "USDC.e"],
+  ["0x24834bbec7e39ef42f4a75eaf8e5b6486d3f0e57", "Wrapped LUNA Token (PoS)", "LUNA", "Wrapped Luna Classic (Shuttle, Polygon PoS)", "LUNC"],
+  ["0x692597b009d13c4049a947cab2239b7d6517875f", "Wrapped UST Token (PoS)", "UST", "Wrapped TerraClassicUSD (Shuttle, Polygon PoS)", "USTC"],
+  ["0x9cd6746665d9557e1b9a775819625711d0693439", "LUNA", "LUNA", "Luna Classic (Wormhole)", "LUNC"],
+  ["0xe6469ba6d2fd6130788e0ea9c0a0515900563b59", "UST", "UST", "TerraClassicUSD (Wormhole)", "USTC"],
+];
+const POLYGON = EURA_CHAINS[1];
+test("Polygon normalization binds every identity to its chain and either queried pool side", async t => {
+  for (const [id, name, symbol, finalName, finalSymbol] of POLYGON_IDENTITIES) {
+    for (const side of ["token0", "token1"]) await t.test(`${id}/${side}`, async () => {
+      const token = { id: id.toUpperCase().replace("0X", "0x"), name, symbol };
+      const rows = [row(1, { [side]: token }), row(2, { [side]: { ...token, id: TOKEN0_ID } })];
+      const [changed, untouched] = await tagsOn(POLYGON, rows);
+      assert.equal(changed["Public Name Tag"], side === "token0" ? `${finalSymbol}/B-0.3% Pool` : `A/${finalSymbol}-0.3% Pool`);
+      assert.ok(changed["Public Note"].includes(finalName));
+      assert.ok(untouched["Public Name Tag"].includes(symbol));
+      assert.deepEqual(token, rows[0][side]);
+      assert.equal(changed["Contract Address"], `eip155:137:${row(1).id}`);
+      const [otherChain] = await tagsOn(EURA_CHAINS[0], [row(1, { [side]: token })]);
+      assert.ok(otherChain["Public Name Tag"].includes(symbol));
+      assert.ok(otherChain["Public Note"].includes(name));
+    });
+  }
+});
+test("Polygon normalization changes only matching stale fields, including whitespace and partial metadata", async t => {
+  for (const [id, name, symbol, finalName, finalSymbol] of POLYGON_IDENTITIES) {
+    for (const [inputName, inputSymbol, expectedName, expectedSymbol] of [
+      [name, finalSymbol, finalName, finalSymbol],
+      [finalName, symbol, finalName, finalSymbol],
+      [finalName, finalSymbol, finalName, finalSymbol],
+      [` ${name} `, ` ${symbol} `, finalName, finalSymbol],
+      ["", symbol, finalSymbol, finalSymbol],
+      [name, "", finalName, finalName],
+      ["Future asset", "FUTURE", "Future asset", "FUTURE"],
+    ]) await t.test(`${id}/${inputName}/${inputSymbol}`, async () => {
+      const [tag] = await tagsOn(POLYGON, [row(1, { token0: { id, name: inputName, symbol: inputSymbol } })]);
+      assert.ok(tag["Public Note"].includes(`${expectedName}/Beta`));
+      assert.ok(tag["Public Note"].includes(`${expectedSymbol}/B`));
+      assert.ok(tag["Public Name Tag"].length <= 50);
+    });
+  }
+});
+test("native USDC, other addresses and unrelated USDT are not renamed", async () => {
+  const rows = [
+    row(1, { token0: { id: "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359", name: "USD Coin", symbol: "USDC" } }),
+    row(2, { token0: { id: TOKEN0_ID, name: "LUNA", symbol: "LUNA" } }),
+    row(3, { token0: { id: "0xc2132d05d31c914a87c6611c10748aeb04b58e8f", name: "(PoS) Tether USD", symbol: "USDT" } }),
+  ];
+  const tags = await tagsOn(POLYGON, rows);
+  assert.deepEqual(tags.map(t => t["Public Name Tag"]), ["USDC/B-0.3% Pool", "LUNA/B-0.3% Pool", "USDT/B-0.3% Pool"]);
+});
+test("two Classic bridge representations remain distinct without discarding either pool", async () => {
+  const tags = await tagsOn(POLYGON, POLYGON_IDENTITIES.filter(x => x[4] === "LUNC").map(([id,name,symbol],i) => row(i+1, {token0:{id,name,symbol}})));
+  assert.equal(tags.length,2);
+  assert.equal(new Set(tags.map(t=>t["Public Name Tag"])).size,2);
+  assert.ok(tags[0]["Public Note"].includes("Shuttle, Polygon PoS"));
+  assert.ok(tags[1]["Public Note"].includes("Wormhole"));
+});
+test("Polygon identity normalization never bypasses invalid-metadata exclusion", async () => {
+  for(const [id,name,symbol] of POLYGON_IDENTITIES) {
+    const tags=await tagsOn(POLYGON,[row(1,{token0:{id,name:`<b>${name}</b>`,symbol}}),row(2)]);
+    assert.equal(tags.length,1);
+    assert.equal(tags[0]["Contract Address"],`eip155:137:${row(2).id}`);
+  }
+});
+
 test("tokens with neither name nor symbol remain excluded, without dropping other rows", async (t) => {
   for (const token of ["token0", "token1"]) {
     for (const value of ["", "   ", "\t\n"]) {

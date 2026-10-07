@@ -243,7 +243,31 @@ const EURA_ADDRESSES: Record<string, string> = {
   "100": "0x4b1e2c2762667331bc91648052f646d1b0d35984",
   "137": "0xe0b52e49357fd4daf2c15e02058dce6bc0057db4",
 };
+// Exact Polygon identities, not ticker-wide replacements. Circle identifies bridged USDC.e:
+// https://www.circle.com/blog/what-you-need-to-know-native-usdc-on-polygon-pos
+// Terra's Classic names: https://docs.terra.money/migration/exchange-migration/
+// Original Terra bridge identities and Polygon PoS mapping are documented in README.md.
+// MAI identity and former name: https://docs.mai.finance/docs/functions/smart-contract-addresses
+// https://docs.mai.finance/docs/resources/qi-glossary
+const POLYGON_TOKEN_NAMES: Record<string, [string, string, string, string]> = {
+  "0xa3fa99a148fa48d14ed51d610c367c61876997f1":
+    ["miMATIC", "MAI", "miMATIC", "MAI"],
+  "0x2791bca1f2de4661ed88a30c99a7a9449aa84174":
+    ["USD Coin (PoS)", "Bridged USDC (Polygon PoS)", "USDC", "USDC.e"],
+  "0x24834bbec7e39ef42f4a75eaf8e5b6486d3f0e57":
+    ["Wrapped LUNA Token (PoS)", "Wrapped Luna Classic (Shuttle, Polygon PoS)", "LUNA", "LUNC"],
+  "0x692597b009d13c4049a947cab2239b7d6517875f":
+    ["Wrapped UST Token (PoS)", "Wrapped TerraClassicUSD (Shuttle, Polygon PoS)", "UST", "USTC"],
+  "0x9cd6746665d9557e1b9a775819625711d0693439":
+    ["LUNA", "Luna Classic (Wormhole)", "LUNA", "LUNC"],
+  "0xe6469ba6d2fd6130788e0ea9c0a0515900563b59":
+    ["UST", "TerraClassicUSD (Wormhole)", "UST", "USTC"],
+};
 function normalizeToken(chainId: string, token: PoolToken): PoolToken {
+  const names = chainId === "137" ? POLYGON_TOKEN_NAMES[token.id.toLowerCase()] : undefined;
+  if (names) return { ...token,
+    name: token.name.trim() === names[0] ? names[1] : token.name,
+    symbol: token.symbol.trim() === names[2] ? names[3] : token.symbol };
   if (token.id.toLowerCase() !== EURA_ADDRESSES[chainId]) return token;
   // Correct only the stale pre-rebrand metadata, not unrelated or future names.
   // Pool membership, contract addresses and fees still come from the subgraph.
