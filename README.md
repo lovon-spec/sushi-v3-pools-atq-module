@@ -18,6 +18,8 @@ On Polygon, six further token identities have field-specific naming normalizatio
 
 Two additional Polygon identities use current names. [Circle renamed Euro Coin / EUROC to EURC without changing its token address](https://www.circle.com/blog/usd-coin-and-euro-coin-are-now-exclusively-usdc-and-eurc). Its [Ethereum EURC address](https://developers.circle.com/stablecoins/eurc-contract-addresses), `0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c`, maps through Polygon's ChildChainManagerProxy `0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa` to `0x8a037dbca8134ffc72c362e394e35e0cad618f85`. The label retains the Polygon PoS bridge distinction. [USDT0 identifies the existing Polygon address](https://usdt0.to/ecosystem/polygon), `0xc2132d05d31c914a87c6611c10748aeb04b58e8f`, following its [in-place upgrade](https://blog.usdt0.to/polygon-usdt-now-upgraded-to-usdt0-1-3b-in-usdt-liquidity-available-natively-omnichain); this module uses USDT0 for that token's stale fields. Both replacements follow the same exact-chain, exact-address, prior-field matching. They do not rename unrelated tokens, derivatives or other-chain USDT.
 
+Ankr's [current Polygon address list](https://www.ankr.com/docs/staking-extra/ls-sc-addresses-mn/#polygon) identifies `0x0e9b89007eee9c958c0eda24ef70723c2c93dd58` as `ankrPOL` via Ankr Bridge. For this exact Polygon identity, stale `Ankr Staked MATIC` / `ankrMATIC` fields become `ankrPOL (Ankr Bridge)` / `ankrPOL`, consistent with its [POL liquid-staking documentation](https://www.ankr.com/docs/liquid-staking/pol/overview/). Other MATIC-related products are unchanged.
+
 ## Build and interface
 
 Use Node.js and Yarn Classic with the committed dependency lock:

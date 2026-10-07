@@ -500,6 +500,7 @@ test("EURA identity does not exempt invalid metadata or fees from existing valid
 });
 
 const POLYGON_IDENTITIES = [
+  ["0x0e9b89007eee9c958c0eda24ef70723c2c93dd58", "Ankr Staked MATIC", "ankrMATIC", "ankrPOL (Ankr Bridge)", "ankrPOL"],
   ["0x8a037dbca8134ffc72c362e394e35e0cad618f85", "Euro Coin (PoS)", "EUROC", "Bridged EURC (Polygon PoS)", "EURC"],
   ["0xc2132d05d31c914a87c6611c10748aeb04b58e8f", "(PoS) Tether USD", "USDT", "USDT0", "USDT0"],
   ["0xa3fa99a148fa48d14ed51d610c367c61876997f1", "miMATIC", "miMATIC", "MAI", "MAI"],

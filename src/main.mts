@@ -251,7 +251,10 @@ const EURA_ADDRESSES: Record<string, string> = {
 // https://docs.mai.finance/docs/resources/qi-glossary
 // Circle's same-token EURC rename and Polygon PoS child mapping: README.md.
 // Polygon's in-place USDT0 upgrade: https://usdt0.to/ecosystem/polygon
+// Ankr's current address-specific identity: https://www.ankr.com/docs/staking-extra/ls-sc-addresses-mn/#polygon
 const POLYGON_TOKEN_NAMES: Record<string, [string, string, string, string]> = {
+  "0x0e9b89007eee9c958c0eda24ef70723c2c93dd58":
+    ["Ankr Staked MATIC", "ankrPOL (Ankr Bridge)", "ankrMATIC", "ankrPOL"],
   "0x8a037dbca8134ffc72c362e394e35e0cad618f85":
     ["Euro Coin (PoS)", "Bridged EURC (Polygon PoS)", "EUROC", "EURC"],
   "0xc2132d05d31c914a87c6611c10748aeb04b58e8f":
